@@ -1,0 +1,76 @@
+---
+import "../pages/generel.css";
+---
+
+<footer>
+  <img src="public/svg/footer_line.svg" alt="footer line" />
+  <div class="grid_footer">
+    <div>
+      <h2>Kontakt</h2>
+      <p>Gyldenløvesgade 4</p>
+      <p>1569 København K</p>
+      <p>+45 21 20 08 18</p>
+      <p>Info@nodeux.dk</p>
+      <p>CVR: 43250485</p>
+      <br />
+      <a href="#"> <img class="some_logo" src="/svg/some_instagram.svg" alt="instagram" /></a>
+      <a href="#"> <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a>
+    </div>
+    <div class="textalign_center">
+      <h2>Åbningstider</h2>
+      <p>Søndag - Mandag</p>
+      <p><b>Lukket</b></p>
+      <br />
+      <p>Tirsdag - Onsdag</p>
+      <p><b>kl. 17.30-00.00</b></p>
+      <br />
+      <p>Torsdag - Lørdag</p>
+      <p><b>kl. 12.00-00.00</b></p>
+    </div>
+    <div class="grid_tilmeld_mail">
+      <div>
+        <h2>Tilmeld dig vores mail</h2>
+        <br />
+        <br />
+        <p>Email*</p>
+        <hr style="height:2px;width:100%;border-width:0;background-color:var(--blue)" />
+      </div>
+      <div class="footer_knap">
+        <a class="knap" href="#">TILMELD</a>
+      </div>
+    </div>
+    <div>
+      <img src="svg/footer_man.svg" alt="No Deux Maskot" />
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding: 10px 0 10px 0;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .textalign_center {
+    text-align: center;
+  }
+  .grid_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+  }
+  .grid_tilmeld_mail {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+  .some_logo {
+    width: 15%;
+    display: inline;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  .footer_knap {
+    margin-top: 30px;
+  }
+</style>

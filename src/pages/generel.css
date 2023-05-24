@@ -1,0 +1,59 @@
+/*********** RESET ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*********** FONT ***********/
+.fonts {
+  font-family: "Allerta", sans-serif;
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+
+/*********** STYLE ***********/
+/* der skal ikke være generel margin, sætter den bare lige på her til at starte med for at lege med dimentionerne*/
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+body {
+  background-color: var(--background_light);
+  color: var(--blue);
+  font-family: "Allerta", sans-serif;
+}
+
+/*********** COLORS ***********/
+:root {
+  --background_light: #f4f3ef;
+  --background_dark: #cac6bc;
+  --blue: #13429a;
+  /*--orange: #E76345;*/
+}
+
+/*********** KNAP ***********/
+.knap {
+  padding: 15px 20px 15px 20px;
+  border: solid;
+  border-color: var(--blue);
+  border-radius: 20px;
+  background-color: var(--blue);
+  color: var(--background_light);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.knap:hover {
+  background-color: var(--background_light);
+  color: var(--blue);
+}
