@@ -1,0 +1,68 @@
+---
+import "../pages/generel.css";
+---
+
+<header>
+  <div class="header_indhold">
+    <a href="/"><img id="logo" src="public/svg/nodeux_logo.svg" alt="No Deux Logo" /></a>
+    <nav>
+      <ul>
+        <li><a class="a_underline" href="#">Menu</a></li>
+        <li><a class="a_underline" href="#">Booking</a></li>
+        <li><a class="a_underline" href="#">Events</a></li>
+        <li><a class="a_underline" href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header_indhold {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .nav_underline {
+    width: 10%;
+    margin-top: -30px;
+    /*ny*/
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header {
+    padding: 10px 20px 0px 20px;
+    /*ny*/
+    position: relative;
+  }
+  ul {
+    display: flex;
+    gap: 80px;
+    justify-content: end;
+  }
+  li {
+    list-style: none;
+  }
+  #logo,
+  nav {
+    flex: 1;
+  }
+  #logo {
+    width: 80%;
+  }
+  a {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.5rem;
+  }
+  .a_underline:hover {
+    position: relative;
+  }
+  .a_underline:hover:after {
+    content: url(svg/placeholder_line.svg);
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -20px;
+  }
+</style>
