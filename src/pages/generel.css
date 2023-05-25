@@ -15,14 +15,7 @@ img {
 .fonts {
   font-family: "Allerta", sans-serif;
   font-family: "brandon-grotesque", sans-serif;
-  font-family: "brandon-grotesque", sans-serif;
-  /*Regular = font weight 400*/
-  /*Medium = font weight 500*/
-  font-family: "Montserrat", sans-serif;
-}
-@font-face {
-  font-family: "";
-  src: url();
+  /*font-family: "Montserrat", sans-serif;*/
 }
 
 /*********** STYLE ***********/
@@ -46,24 +39,6 @@ body {
   /*--orange: #E76345;*/
 }
 
-/*********** KNAP ***********/
-.knap {
-  padding: 15px 20px 15px 20px;
-  border: solid;
-  border-color: var(--blue);
-  border-radius: 20px;
-  background-color: var(--blue);
-  color: var(--background_light);
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-family: "Allerta", sans-serif;
-}
-
-.knap:hover {
-  background-color: var(--background_light);
-  color: var(--blue);
-}
-
 /*********** TEXT ***********/
 p {
   font-family: "brandon-grotesque", sans-serif;
@@ -72,4 +47,5 @@ p {
 h2 {
   font-family: "Allerta", sans-serif;
   font-weight: 500;
+  font-size: 1.7rem;
 }
