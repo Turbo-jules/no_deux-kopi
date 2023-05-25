@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Nyhed_card from "../components/Nyhed_card.astro";
 ---
 
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,14 +17,18 @@ import Footer from "../components/Footer.astro";
     <!-- Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
 
-    <title>Astro</title>
+    <title>forside</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <Header />
     <main>
       <div class="om_nodeux">
+        <figure>
+          <img src="/svg/blad.svg" alt="blad" />
+        </figure>
         <div class="hvad_er_nodeux">
-          <h1>Havd er No Deux</h1>
+          <h2>Havd er No Deux</h2>
           <p>
             Hos Bistro No Deux serverer vi lækre franske retter med nøje udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig fransk bistro i Paris. Konceptet er inspireret af restaurantens beliggenhed og derfor kaldes No Deux også en
             “vintage” bistro.
@@ -37,7 +42,7 @@ import Footer from "../components/Footer.astro";
           <img src="/webp/moulesfrites.webp" alt="matilde" />
         </figure>
         <div class="hvad_er_nodeux">
-          <h1>Havd er No Deux</h1>
+          <h2>Havd er No Deux</h2>
           <p>Menuen er fransk, til dels bestemt af årstiden. Der serveres, bl.a. klassisk Moules frites og Tartare sammen med lækker fransk vin.</p>
           <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
           <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
@@ -47,6 +52,17 @@ import Footer from "../components/Footer.astro";
         <figure>
           <img src="/svg/kniv_gaffel.svg" alt="bestik" />
         </figure>
+        <figure>
+          <img src="/svg/blad.svg" alt="blad" />
+        </figure>
+      </div>
+      <div>
+        <h2>Nyheder</h2>
+        <p>Kom og prøv vores vinsmagning eller tag en picnickurv med i parken. Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med venner, familie eller gøre solo.</p>
+        <div>
+          <Nyhed_card />
+          <Nyhed_card />
+        </div>
       </div>
     </main>
     <Footer />
