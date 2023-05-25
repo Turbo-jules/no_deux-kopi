@@ -2,7 +2,7 @@
   // Skift farve på burger og X
   const menuColor = "#13429a";
   // Skift farve på kassen rundt om
-  const boxColor = "#13429a";
+  const boxColor = "#13429a00";
   // Hvornår skal den komme frem f.eks. 600 eller der under
   const mediaQuery = "1100";
   // Hvordan skal menupunkter være align'et (left center right)

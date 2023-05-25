@@ -1,0 +1,90 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="noindex" />
+    <!-- Fonte -->
+    <link rel="stylesheet" href="https://use.typekit.net/lvb7hqu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+
+    <title>Vinsmagning</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <div class="tak_grid">
+        <div class="tak_div">
+          <p class="tak_tekst">Tak for din bedømmelse!</p>
+        </div>
+        <div class="vin_div">
+          <img class="vin" src="/svg/glas.svg" alt="to glas vin" />
+        </div>
+      </div>
+      <div class="tilbage_button">
+        <Button text="TILBAGE TIL FORSIDEN" href="/" />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .tak_grid {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-inline: auto;
+    margin: 30px;
+  }
+  .vin {
+    width: 50%;
+    margin-inline: auto;
+  }
+  .tilbage_button {
+    display: flex;
+    justify-content: center;
+  }
+  .tak_div {
+    text-align: center;
+    padding: 20px;
+  }
+  .tak_tekst {
+    font-size: 2rem;
+  }
+
+  .vin_div {
+    padding: 0 20px 20px 20px;
+  }
+
+  /*********** MEDIA QUERY ***********/
+  @media (min-width: 1100px) {
+    .tak_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: solid;
+      border-radius: 40px;
+      border-color: var(--blue);
+      width: 800px;
+      height: 300px;
+      margin-inline: auto;
+      gap: 30px;
+    }
+    .vin {
+      height: 70%;
+      transform: translateY(20%);
+    }
+    .tak_tekst {
+      transform: translateY(220%);
+    }
+  }
+</style>
