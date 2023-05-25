@@ -1,15 +1,21 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+window.addEventListener("load", changeTestimonial);
+
 document.querySelector(".prev").addEventListener("mousedown", minusSlides);
 document.querySelector(".next").addEventListener("mousedown", plusSlides);
 
+function changeTestimonial() {
+  setInterval(plusSlides, 10000);
+}
 function minusSlides() {
   showSlides((slideIndex += -1));
   console.log("plus");
 }
 function plusSlides() {
   showSlides((slideIndex += 1));
+  clearInterval(window.setInterval(plusSlides, 10000));
   console.log("plus");
 }
 
@@ -20,7 +26,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -30,9 +36,6 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }

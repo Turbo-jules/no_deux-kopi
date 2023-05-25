@@ -1,0 +1,67 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import "../css/testimonial.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="https://use.typekit.net/lvb7hqu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <Header />
+    </header>
+    <main>
+      <img id="pynt" src="svg/blad.svg" alt="Blad" />
+      <div class="form">
+        <img id="bog" src="svg/book.svg" alt="Notesbog" />
+        <h1>Skriv en bedømmelse af dit besøg hos No Deux</h1>
+        <form>
+          <input
+            placeholder="Dit navn*"
+            id="name"
+            name="name"
+            type="text"
+            required
+          />
+
+          <textarea
+            placeholder="Skriv din bedømmelse her, hvad synes du om maden, stemningen osv.*"
+            id="long"
+            name="long"
+            rows="6"
+            required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="grid_1-1">
+        <img id="pynt2" src="svg/blad.svg" alt="Blad" />
+        <img id="sol" src="svg/solen.svg" alt="Sol" />
+      </div>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+    <script src="../js/submit.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Testimonials from "../components/Testimonials.astro";
+
 import "../css/testimonial.css";
 ---
 
@@ -27,28 +27,17 @@ import "../css/testimonial.css";
     <title>Astro</title>
   </head>
   <body>
-    <Header />
-
-    <div class="slideshow-container">
-      <img src="svg/stars.svg" style="width: 16%" alt="Stjerner" />
-      <Testimonials />
-      <img
-        style="width: 4.3%"
-        src="svg/left.svg"
-        class="prev"
-        alt="Venstre pil"
-      />
-      <img
-        style="width: 4.3%"
-        src="svg/right.svg"
-        class="next"
-        alt="Højre pil"
-      />
-    </div>
-    <div class="bedøm">
-      <p>Har du også noget på hjertet?</p>
-      <a href="/testimonial"><p>Bedøm nu</p></a>
-    </div><Footer />
-    <script src="../js/testimonials.js"></script>
+    <header>
+      <Header />
+    </header>
+    <main>
+      <div class="form">
+        <h1>Tak for din bedømmelse</h1>
+        <img id="bog" src="svg/book.svg" alt="Notesbog" />
+      </div>
+    </main>
   </body>
+  <footer>
+    <Footer />
+  </footer>
 </html>
