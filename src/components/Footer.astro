@@ -5,16 +5,16 @@ import "../pages/generel.css";
 <footer>
   <img src="public/svg/footer_line.svg" alt="footer line" />
   <div class="grid_footer">
-    <div>
+    <div class="textalign_center">
       <h2>Kontakt</h2>
       <p>Gyldenløvesgade 4</p>
       <p>1569 København K</p>
       <p>+45 21 20 08 18</p>
-      <p>Info@nodeux.dk</p>
+      <p><a href="#">Info@nodeux.dk</a></p>
       <p>CVR: 43250485</p>
       <br />
-      <a href="#"> <img class="some_logo" src="/svg/some_instagram.svg" alt="instagram" /></a>
-      <a href="#"> <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a>
+      <a href="https://www.instagram.com/nodeux_cph/?hl=en" target="”_blank”"> <img class="some_logo" src="/svg/some_instagram.svg" alt="instagram" /></a>
+      <a href="https://www.facebook.com/profile.php?id=100083668621682" target="”_blank”"> <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a>
     </div>
     <div class="textalign_center">
       <h2>Åbningstider</h2>
@@ -33,34 +33,31 @@ import "../pages/generel.css";
         <br />
         <br />
         <p>Email*</p>
-        <hr style="height:2px;width:100%;border-width:0;background-color:var(--blue)" />
+        <hr style="height:1px;width:90%;border-width:0;background-color:var(--blue)" />
       </div>
       <div class="footer_knap">
         <a class="knap" href="#">TILMELD</a>
       </div>
     </div>
     <div>
-      <img src="svg/footer_man.svg" alt="No Deux Maskot" />
+      <img class="footer_man_size" src="svg/footer_man.svg" alt="No Deux Maskot" />
     </div>
   </div>
 </footer>
 
 <style>
-  footer {
-    padding: 10px;
-    margin-inline: auto;
-  }
   .textalign_center {
     text-align: center;
   }
   .grid_footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
   }
   .grid_tilmeld_mail {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+    padding-left: 70px;
   }
   .some_logo {
     width: 15%;
@@ -70,6 +67,13 @@ import "../pages/generel.css";
     margin-bottom: 10px;
   }
   .footer_knap {
-    margin-top: 30px;
+    margin-top: 63px;
+  }
+  .footer_man_size {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: var(--blue);
   }
 </style>

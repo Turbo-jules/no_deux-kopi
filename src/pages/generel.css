@@ -20,10 +20,6 @@ img {
   /*Medium = font weight 500*/
   font-family: "Montserrat", sans-serif;
 }
-@font-face {
-  font-family: "";
-  src: url();
-}
 
 /*********** STYLE ***********/
 /* der skal ikke være generel margin, sætter den bare lige på her til at starte med for at lege med dimentionerne*/
@@ -72,4 +68,5 @@ p {
 h2 {
   font-family: "Allerta", sans-serif;
   font-weight: 500;
+  font-size: 1.7rem;
 }
