@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* --------- Om No Deux --------- */
 .om_nodeux {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 0.5fr 1fr 3fr 1fr 1fr;
@@ -67,4 +73,18 @@ figure.blad_left {
 .blad_left img {
   transform: rotate(130deg);
   width: 100%;
+}
+
+/* --------- Nyheder --------- */
+
+.nyheder {
+  display: grid;
+  text-align: center;
+  gap: 20px;
+}
+
+.nyheder_card_row {
+  display: flex;
+  gap: 80px;
+  justify-self: center;
 }

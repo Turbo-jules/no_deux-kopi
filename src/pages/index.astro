@@ -3,6 +3,7 @@ import "../pages/generel.css";
 import "../pages/index.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 import Nyhed_card from "../components/Nyhed_card.astro";
 ---
 
@@ -34,7 +35,7 @@ import Nyhed_card from "../components/Nyhed_card.astro";
             Hos Bistro No Deux serverer vi lækre franske retter med nøje udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig fransk bistro i Paris. Konceptet er inspireret af restaurantens beliggenhed og derfor kaldes No Deux også en
             “vintage” bistro.
           </p>
-          <!-- <Button/> -->
+          <Button text="Book Bord" href="#" />
         </div>
         <figure class="om_nodeux_b1">
           <img src="/webp/egg.webp" alt="spejlæg" />
@@ -48,7 +49,7 @@ import Nyhed_card from "../components/Nyhed_card.astro";
           <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
           <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
           <p>Vi vil gøre vores bedste for at jeres besøg i Bistro No deux bliver en god og hyggelig oplevelse.</p>
-          <!-- <Button/> -->
+          <Button text="Vores Menu" href="#" />
         </div>
         <figure class="bestik">
           <img src="/svg/kniv_gaffel.svg" alt="bestik" />
@@ -57,12 +58,24 @@ import Nyhed_card from "../components/Nyhed_card.astro";
           <img src="/svg/blad.svg" alt="blad" />
         </figure>
       </div>
-      <div>
+      <div class="nyheder">
         <h2>Nyheder</h2>
         <p>Kom og prøv vores vinsmagning eller tag en picnickurv med i parken. Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med venner, familie eller gøre solo.</p>
-        <div>
-          <Nyhed_card />
-          <Nyhed_card />
+        <div class="nyheder_card_row">
+          <Nyhed_card
+            image="/webp/vinsmagning_card.webp"
+            alt="vinsmagning"
+            headline="Vinsmagning"
+            text="Kom til vinsmagning i de kolde vintermåneder, og læg hverdagen bag dig. Vores vin connoisseur vil byde på både rødt, hvidt og moserende, ledsaget af lækre oste og kiks fra køkkenet."
+            href="/vin.astro"
+          />
+          <Nyhed_card
+            image="/webp/picnic_card.webp"
+            alt="picnic"
+            headline="Picnic"
+            text="Vi pakker en picnic kurv med de lækreste franske oste og godter. Det eneste du skal gøre, er at tage en ven i hånden og hente den færdigpakkede kurv, inden i finder jer er skønt sted i solen, til at nyder forfriskningerne."
+            href="#"
+          />
         </div>
       </div>
     </main>
