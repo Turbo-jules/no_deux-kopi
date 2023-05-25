@@ -11,7 +11,7 @@ import Button from "../components/Button.astro";
     <h2>250,-</h2>
     <p>Vinsmagning hos No Deux er for alle der elsker vin, eller gerne vil overbevise deres venner om, at vin er det bedste. Vi har vores egen vin-connoisseur og dækker op med både ost og kiks under eventet, som varer i 2 timer.</p>
     <p>Vi tilbyder en blandet pakke med 6 glas, 2 glas rødvin, 1 glas rosé, 2 glas hvidvin og 1 glas mousserende vin.</p>
-    <Button text="BESTIL NU" />
+    <div class="knap"><Button text="BESTIL NU" /></div>
   </div>
 </div>
 <style>
@@ -51,6 +51,10 @@ import Button from "../components/Button.astro";
 
     .img_vin {
       height: 20vw;
+    }
+    .knap {
+      margin-top: 20px;
+      align-self: flex-start;
     }
   }
 </style>
