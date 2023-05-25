@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <html lang="en">
@@ -12,14 +13,29 @@ import Footer from "../components/Footer.astro";
     <link rel="stylesheet" href="https://use.typekit.net/lvb7hqu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
+      rel="stylesheet"
+    />
     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Astro</title>
   </head>
   <body>
     <Header />
+
+    <div class="slideshow-container">
+      <img src="/stars.svg" alt="Stjerner" />
+      <Testimonials />
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+
     <Footer />
+    <script src="../js/testimonials.js"></script>
   </body>
 </html>
