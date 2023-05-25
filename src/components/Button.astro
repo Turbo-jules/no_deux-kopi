@@ -1,0 +1,30 @@
+---
+const { text, href } = Astro.props;
+---
+
+<a class="knap" href={href}>
+  {text}
+</a>
+
+<!-- 
+Skal tilføjes sådan: <Button text="TILMELD" href="#" /> 
+-->
+
+<style>
+  .knap {
+    padding: 15px 20px 15px 20px;
+    border: solid;
+    border-color: var(--blue);
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: var(--background_light);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Allerta", sans-serif;
+  }
+
+  .knap:hover {
+    background-color: var(--background_light);
+    color: var(--blue);
+  }
+</style>
