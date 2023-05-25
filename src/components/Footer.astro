@@ -17,7 +17,7 @@ import Button from "../components/Button.astro";
       <a href="https://www.instagram.com/nodeux_cph/?hl=en" target="”_blank”"> <img class="some_logo" src="/svg/some_instagram.svg" alt="instagram" /></a>
       <a href="https://www.facebook.com/profile.php?id=100083668621682" target="”_blank”"> <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a>
     </div>
-    <div class="textalign_center">
+    <div class="textalign_center åbningstider_margin">
       <h2>Åbningstider</h2>
       <p>Søndag - Mandag</p>
       <p><b>Lukket</b></p>
@@ -31,8 +31,6 @@ import Button from "../components/Button.astro";
     <div class="grid_tilmeld_mail">
       <div>
         <h2>Tilmeld dig vores mail</h2>
-        <br />
-        <br />
         <input type="text" placeholder="Email*" />
         <hr style="height:1px;width:90%;border-width:0;background-color:var(--blue)" />
       </div>
@@ -50,18 +48,16 @@ import Button from "../components/Button.astro";
   .textalign_center {
     text-align: center;
   }
-  .grid_footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr;
-  }
   .grid_tilmeld_mail {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    padding-left: 70px;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .åbningstider_margin {
+    margin-top: 40px;
   }
   .some_logo {
-    width: 15%;
+    width: 10%;
     display: inline;
   }
   h2 {
@@ -71,7 +67,9 @@ import Button from "../components/Button.astro";
     margin-top: 63px;
   }
   .footer_man_size {
-    width: 100%;
+    width: 70%;
+    margin-top: 50px;
+    float: right;
   }
   a {
     text-decoration: none;
@@ -87,6 +85,7 @@ import Button from "../components/Button.astro";
     color: var(--blue);
     width: 500px;
     background-color: var(--background_light);
+    margin-top: 20px;
   }
 
   input:focus {
@@ -97,5 +96,35 @@ import Button from "../components/Button.astro";
     color: var(--blue);
     font-family: "brandon-grotesque", sans-serif;
     font-size: 1.3rem;
+  }
+  /*********** MEDIA QUERY ***********/
+  @media (min-width: 1100px) {
+    /*********** GRID ***********/
+    .grid_footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 3fr 1fr;
+    }
+    .grid_tilmeld_mail {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+      padding-left: 70px;
+    }
+    /*********** SIZE ***********/
+
+    .some_logo {
+      width: 15%;
+      display: inline;
+    }
+    .åbningstider_margin,
+    .tilmeld_margin {
+      margin-top: 0;
+    }
+    .footer_man_size {
+      width: 100%;
+    }
+    .grid_tilmeld_mail {
+      text-align: left;
+    }
   }
 </style>
