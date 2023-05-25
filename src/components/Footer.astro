@@ -1,5 +1,6 @@
 ---
 import "../pages/generel.css";
+import Button from "../components/Button.astro";
 ---
 
 <footer>
@@ -32,11 +33,11 @@ import "../pages/generel.css";
         <h2>Tilmeld dig vores mail</h2>
         <br />
         <br />
-        <p>Email*</p>
+        <input type="text" placeholder="Email*" />
         <hr style="height:1px;width:90%;border-width:0;background-color:var(--blue)" />
       </div>
       <div class="footer_knap">
-        <a class="knap" href="#">TILMELD</a>
+        <Button text="TILMELD" href="#" />
       </div>
     </div>
     <div>
@@ -75,5 +76,26 @@ import "../pages/generel.css";
   a {
     text-decoration: none;
     color: var(--blue);
+  }
+
+  /*********** INPUT ***********/
+  input {
+    border: none;
+    height: 30px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 1.3rem;
+    color: var(--blue);
+    width: 500px;
+    background-color: var(--background_light);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input::placeholder {
+    color: var(--blue);
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 1.3rem;
   }
 </style>
