@@ -93,7 +93,7 @@ form {
   margin: auto;
 }
 
-input {
+#navn {
   padding: 0.5rem;
   background-color: var(--background_light);
   border: var(--background_light);
