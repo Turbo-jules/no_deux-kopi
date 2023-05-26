@@ -10,7 +10,7 @@ const { image, alt, headline, text, href } = Astro.props;
   <div class="nyheds_card_text">
     <h3>{headline}</h3>
     <p>{text}</p>
-    <Button text="Læs Mere" href="{href}" />
+    <div class="laes_mere"><Button text="Læs Mere" href="{href}" /></div>
   </div>
 </div>
 
@@ -26,6 +26,8 @@ const { image, alt, headline, text, href } = Astro.props;
   }
   figure.card_img_container {
     width: 400px;
+    height: 300px;
+    overflow: hidden;
   }
   figure.card_img_container img {
     width: 100%;
@@ -47,5 +49,9 @@ const { image, alt, headline, text, href } = Astro.props;
 
   .nyheds_card_text p {
     text-align: left;
+  }
+
+  .laes_mere {
+    margin: 20px 0px 10px 0px;
   }
 </style>

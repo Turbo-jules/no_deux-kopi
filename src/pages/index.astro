@@ -39,7 +39,7 @@ import Nyhed_card from "../components/Nyhed_card.astro";
             Hos Bistro No Deux serverer vi lækre franske retter med nøje udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig fransk bistro i Paris. Konceptet er inspireret af restaurantens beliggenhed og derfor kaldes No Deux også en
             “vintage” bistro.
           </p>
-          <Button text="Book Bord" href="#" />
+          <div><Button text="Book Bord" href="#" /></div>
         </div>
         <figure class="om_nodeux_b1">
           <img src="/webp/egg.webp" alt="spejlæg" />
@@ -49,11 +49,15 @@ import Nyhed_card from "../components/Nyhed_card.astro";
         </figure>
         <div class="fransk_menu">
           <h2>Fransk Menu</h2>
-          <p>Menuen er fransk, til dels bestemt af årstiden. Der serveres, bl.a. klassisk Moules frites og Tartare sammen med lækker fransk vin.</p>
-          <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
-          <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
-          <p>Vi vil gøre vores bedste for at jeres besøg i Bistro No deux bliver en god og hyggelig oplevelse.</p>
-          <Button text="Vores Menu" href="#" />
+          <div class="fransk_menu_text">
+            <p>Menuen er fransk, til dels bestemt af årstiden. Der serveres, bl.a. klassisk Moules frites og Tartare sammen med lækker fransk vin.</p>
+            <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
+            <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
+            <p>Vi vil gøre vores bedste for at jeres besøg i Bistro No deux bliver en god og hyggelig oplevelse.</p>
+          </div>
+          <div>
+            <Button text="Vores Menu" href="#" />
+          </div>
         </div>
         <figure class="bestik">
           <img src="/svg/kniv_gaffel.svg" alt="bestik" />
