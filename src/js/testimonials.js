@@ -11,11 +11,12 @@ function changeTestimonial() {
 }
 function minusSlides() {
   showSlides((slideIndex += -1));
-  console.log("plus");
+  window.removeEventListener("load", changeTestimonial);
+  console.log("minus");
 }
 function plusSlides() {
   showSlides((slideIndex += 1));
-  clearInterval(window.setInterval(plusSlides, 10000));
+  window.removeEventListener("load", changeTestimonial);
   console.log("plus");
 }
 

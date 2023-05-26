@@ -22,7 +22,7 @@ function addTestimonial(newTestimonial) {
     .then((res) => res.json())
     .then((data) => {
       console.log("data:", data);
-      window.location.href = "/addTestimonialFeedback";
+      window.location.href = "/tak";
     });
 }
 

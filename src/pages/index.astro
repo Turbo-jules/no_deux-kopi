@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Testimonials from "../components/Testimonials.astro";
 import "../css/testimonial.css";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -30,24 +31,14 @@ import "../css/testimonial.css";
     <Header />
 
     <div class="slideshow-container">
-      <img src="svg/stars.svg" style="width: 16%" alt="Stjerner" />
+      <img id="stars" src="svg/stars.svg" alt="Stjerner" />
       <Testimonials />
-      <img
-        style="width: 4.3%"
-        src="svg/left.svg"
-        class="prev"
-        alt="Venstre pil"
-      />
-      <img
-        style="width: 4.3%"
-        src="svg/right.svg"
-        class="next"
-        alt="Højre pil"
-      />
+      <img src="svg/left.svg" class="prev" alt="Venstre pil" />
+      <img src="svg/right.svg" class="next" alt="Højre pil" />
     </div>
     <div class="bedøm">
       <p>Har du også noget på hjertet?</p>
-      <a href="/testimonial"><p>Bedøm nu</p></a>
+      <Button text="BEDØM NU" href="/testimonial" />
     </div><Footer />
     <script src="../js/testimonials.js"></script>
   </body>
