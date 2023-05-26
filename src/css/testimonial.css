@@ -22,9 +22,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10px;
-  color: #13429a;
-  transition: 0.6s ease;
+
   border-radius: 0 3px 3px 0;
   user-select: none;
   box-sizing: border-box;
@@ -36,7 +34,10 @@ img {
 
 .prev:hover,
 .next:hover {
-  background-color: var(--background_light);
+  /* filter: invert(50%) sepia(0%) saturate(622%) hue-rotate(111deg)
+    brightness(517%) contrast(100%); */
+  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%)
+    contrast(505%);
 }
 
 .fade {
@@ -80,9 +81,8 @@ h2 {
   margin-bottom: 50px;
   color: var(--blue);
   text-align: center;
-  font-family: "brandon-grotesque", sans-serif;
-  font-weight: 400;
-  font-size: 2.3em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
 }
 form {
   display: flex;
@@ -92,12 +92,6 @@ form {
   max-width: 600px;
   margin: auto;
 }
-label {
-  color: #5a5656;
-  font-family: var(--main_font);
-  font-size: 17px;
-  margin-top: 20px;
-}
 
 input {
   padding: 0.5rem;
@@ -105,9 +99,8 @@ input {
   border: var(--background_light);
   border-bottom: 2px solid var(--blue);
   color: var(--blue);
-  font-family: "brandon-grotesque", sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
   width: 100%;
   box-sizing: border-box;
   margin: auto;
@@ -120,9 +113,8 @@ textarea {
   border-radius: 20px;
   color: var(--blue);
   text-align: center;
-  font-family: "brandon-grotesque", sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
   width: 100%;
   box-sizing: border-box;
   margin: auto;
@@ -150,12 +142,10 @@ button {
 button:hover {
   background-color: var(--background_light);
   color: var(--blue);
+  border-color: var(--blue);
+  border-radius: 20px;
 }
 
-button:hover {
-  background-color: white;
-  border: 2px solid #ef9786;
-}
 #pynt2 {
   display: none;
 }
@@ -198,7 +188,7 @@ button:hover {
 @media (min-width: 1000px) {
   .prev,
   .next {
-    width: 4.3%;
+    width: 3.3%;
     margin: 0 14%;
   }
   #pynt {
