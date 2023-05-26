@@ -21,7 +21,7 @@ img {
 /*********** STYLE ***********/
 /* der skal ikke være generel margin, sætter den bare lige på her til at starte med for at lege med dimentionerne*/
 main {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-inline: auto;
 }
 
