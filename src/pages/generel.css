@@ -15,7 +15,7 @@ img {
 .fonts {
   font-family: "Allerta", sans-serif;
   font-family: "brandon-grotesque", sans-serif;
-  /*font-family: "Montserrat", sans-serif;*/
+  font-family: "Montserrat", sans-serif;
 }
 
 /*********** STYLE ***********/
@@ -41,8 +41,8 @@ body {
 
 /*********** TEXT ***********/
 p {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
 }
 h2 {
   font-family: "Allerta", sans-serif;
