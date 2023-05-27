@@ -17,11 +17,13 @@ main {
   grid-row: 2/3;
 
   display: grid;
-  grid-template-columns: 0.5fr 3fr 0.5fr;
-  grid-template-rows: 0.2fr 0.5fr 0.5fr 0.8fr 1fr 0.8fr 0.2fr 0.2fr;
+  grid-template-columns: 0.3fr 3fr 0.03fr;
+  /* grid-template-rows: 0.2fr 0.5fr 0.5fr 0.8fr 1fr 0.8fr 0.2fr 0.2fr; */
+  grid-template-rows: 0.07fr 0.07fr 0.15fr 0.6fr 0.4fr 0.8fr 0.2fr 0.07fr;
   gap: 10px;
 
   background-color: var(--background_dark);
+  overflow: hidden;
 }
 .om_nodeux h2 {
   text-align: center;
@@ -33,11 +35,12 @@ figure.blad_right {
 
   width: 70px;
   align-self: start;
+  margin: -10px 0px 0px -20px;
 }
 .blad_right img {
   transform: rotate(-50deg);
   width: 100%;
-  margin: -10px 0px 40px -30px;
+  /* margin: -10px 0px 0px -20px; */
 }
 
 .hvad_er_nodeux {
@@ -45,7 +48,7 @@ figure.blad_right {
   grid-row: 4/5;
 
   display: grid;
-  grid-template-rows: 0.1fr 0.8fr 0.25fr;
+  grid-template-rows: 0.15fr 0.8fr 0.15fr;
   gap: 15px;
   align-self: center;
 }
@@ -59,8 +62,8 @@ figure.om_nodeux_b1 {
 }
 .om_nodeux_b1 img {
   border-radius: 40px;
-  width: auto;
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 figure.om_nodeux_b2 {
@@ -110,7 +113,7 @@ figure.blad_left {
 
   width: 70px;
   align-self: end;
-  margin: 15px 0px 0px 0px;
+  margin: 15px 10px -10px 0px;
 }
 .blad_left img {
   transform: rotate(130deg);
@@ -122,7 +125,7 @@ figure.blad_left {
 .nyheder {
   grid-row: 3/4;
 
-  max-width: 350px;
+  max-width: 300px;
   margin: auto;
   text-align: center;
 }
@@ -133,8 +136,46 @@ figure.blad_left {
 .nyheder_card_row {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
   justify-self: center;
+}
+
+/* --------- SoMe --------- */
+
+.some {
+  grid-row: 5/6;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.08fr 1.5fr;
+  gap: 10px;
+  justify-content: center;
+
+  max-width: 300px;
+  margin: auto;
+}
+
+.some_titel {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.some h2 {
+  margin-bottom: 20px;
+}
+
+.some_boenne {
+  display: none;
+}
+
+.some_opslag {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.some_opslag img {
+  border-radius: 40px;
 }
 
 @media (min-width: 1200px) {
@@ -285,6 +326,7 @@ figure.blad_left {
   }
 
   .some_boenne {
+    display: block;
     grid-column: 1/3;
     grid-row: 1/3;
     width: 30%;
