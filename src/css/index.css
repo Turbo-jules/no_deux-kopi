@@ -1,8 +1,7 @@
 main {
   display: grid;
-  grid-template-rows: repeat (4, 1fr);
+  grid-template-rows: repeat (6, 1fr);
   gap: 40px;
-  /* max-width: 1200px; */
 }
 
 /* --------- Hero --------- */
@@ -138,7 +137,7 @@ figure.blad_left {
 /* --------- SoMe --------- */
 
 .some {
-  grid-row: 5/6;
+  grid-row: 6/7;
 
   display: grid;
   gap: 40px;
@@ -146,6 +145,7 @@ figure.blad_left {
 
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 25px;
 }
 
 .some_titel {

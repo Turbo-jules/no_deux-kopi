@@ -1,10 +1,12 @@
 ---
-import "../pages/generel.css";
-import "../pages/index.css";
+import "../css/generel.css";
+import "../css/index.css";
+import "../css/testimonial.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
 import Nyhed_card from "../components/Nyhed_card.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <html lang="da">
@@ -40,10 +42,12 @@ import Nyhed_card from "../components/Nyhed_card.astro";
           <img src="/svg/blad.svg" alt="blad" />
         </figure>
         <div class="hvad_er_nodeux">
-          <h2>Havd er No Deux</h2>
+          <h2>Hvad er No Deux</h2>
           <p>
-            Hos Bistro No Deux serverer vi lækre franske retter med nøje udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig fransk bistro i Paris. Konceptet er inspireret af restaurantens beliggenhed og derfor kaldes No Deux også en
-            “vintage” bistro.
+            Hos Bistro No Deux serverer vi lækre franske retter med nøje
+            udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig
+            fransk bistro i Paris. Konceptet er inspireret af restaurantens
+            beliggenhed og derfor kaldes No Deux også en “vintage” bistro.
           </p>
           <div><Button text="Book Bord" href="#" /></div>
         </div>
@@ -56,10 +60,25 @@ import Nyhed_card from "../components/Nyhed_card.astro";
         <div class="fransk_menu">
           <h2>Fransk Menu</h2>
           <div class="fransk_menu_text">
-            <p>Menuen er fransk, til dels bestemt af årstiden. Der serveres, bl.a. klassisk Moules frites og Tartare sammen med lækker fransk vin.</p>
-            <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
-            <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
-            <p>Vi vil gøre vores bedste for at jeres besøg i Bistro No deux bliver en god og hyggelig oplevelse.</p>
+            <p>
+              Menuen er fransk, til dels bestemt af årstiden. Der serveres,
+              bl.a. klassisk Moules frites og Tartare sammen med lækker fransk
+              vin.
+            </p>
+            <p>
+              Indretningen af restauranten er fransk landstil med gamle
+              vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en
+              hyggelig atmosfære.
+            </p>
+            <p>
+              Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og
+              når vi går koldere dage i møde, rykker vi den gode stemning med
+              indenfor.
+            </p>
+            <p>
+              Vi vil gøre vores bedste for at jeres besøg i Bistro No deux
+              bliver en god og hyggelig oplevelse.
+            </p>
           </div>
           <div>
             <Button text="Vores Menu" href="#" />
@@ -74,7 +93,11 @@ import Nyhed_card from "../components/Nyhed_card.astro";
       </div>
       <div class="nyheder">
         <h2>Nyheder</h2>
-        <p>Kom og prøv vores vinsmagning eller tag en picnickurv med i parken. Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med venner, familie eller gøre solo.</p>
+        <p>
+          Kom og prøv vores vinsmagning eller tag en picnickurv med i parken.
+          Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med
+          venner, familie eller gøre solo.
+        </p>
         <div class="nyheder_card_row">
           <Nyhed_card
             image="/webp/vinsmagning_card.webp"
@@ -92,6 +115,16 @@ import Nyhed_card from "../components/Nyhed_card.astro";
           />
         </div>
       </div>
+      <div class="slideshow-container">
+        <img id="stars" src="svg/stars.svg" alt="Stjerner" />
+        <Testimonials />
+        <img src="svg/left.svg" class="prev" alt="Venstre pil" />
+        <img src="svg/right.svg" class="next" alt="Højre pil" />
+      </div>
+      <div class="bedøm">
+        <p>Har du også noget på hjertet?</p>
+        <Button text="BEDØM NU" href="/testimonial" />
+      </div>
       <div class="some">
         <div class="some_titel">
           <h2>Følg os på instagram</h2>
@@ -106,5 +139,6 @@ import Nyhed_card from "../components/Nyhed_card.astro";
       </div>
     </main>
     <Footer />
+    <script src="../js/testimonials.js"></script>
   </body>
 </html>
