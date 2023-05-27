@@ -1,0 +1,50 @@
+---
+const { data } = Astro.props;
+
+function getFirstNChars(str, length) {
+  return str.substring(0, length);
+}
+
+import "../css/testimonial.css";
+---
+
+<div class="mySlides fade">
+  <p id="anmeldelse">
+    "{getFirstNChars(data.description, 300)}"
+  </p>
+  <p id="name"><em>-{data.name}</em></p>
+</div>
+
+<style>
+  #anmeldelse {
+    font-size: 25px;
+    color: var(--blue);
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: "Allerta", sans-serif;
+    font-weight: 500;
+    max-width: 50%;
+  }
+  #name {
+    color: var(--blue);
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+  }
+
+  @media (min-width: 800px) {
+    p {
+      max-width: 65ch;
+    }
+    #name {
+      color: var(--blue);
+      font-size: 30px;
+      margin-left: 500px;
+      margin-bottom: 20px;
+      font-family: "brandon-grotesque", sans-serif;
+      font-size: 23px;
+    }
+  }
+</style>
