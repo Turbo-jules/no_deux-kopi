@@ -20,13 +20,13 @@ const { image, alt, headline, text, href } = Astro.props;
     flex-direction: column;
     gap: 20px;
 
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 40px;
     background-color: var(--background_dark);
   }
   figure.card_img_container {
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
     overflow: hidden;
   }
   figure.card_img_container img {
@@ -44,7 +44,8 @@ const { image, alt, headline, text, href } = Astro.props;
   .nyheds_card_text h3 {
     font-family: "Allerta", sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
 
   .nyheds_card_text p {
@@ -52,6 +53,44 @@ const { image, alt, headline, text, href } = Astro.props;
   }
 
   .laes_mere {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 10px 5%;
+  }
+  @media (min-width: 1200px) {
+    div.nyheds_card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      max-width: 400px;
+      border-radius: 40px;
+      background-color: var(--background_dark);
+    }
+    figure.card_img_container {
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .nyheds_card_text {
+      margin: 0px 40px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .nyheds_card_text h3 {
+      font-family: "Allerta", sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+
+    .nyheds_card_text p {
+      text-align: left;
+    }
+
+    .laes_mere {
+      margin: 20px 0px 10px 0px;
+    }
   }
 </style>
