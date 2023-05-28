@@ -1,0 +1,244 @@
+.slideshow-container {
+  background-color: var(--background_dark);
+  padding: 60px 0;
+  position: relative;
+  margin: 0 auto;
+  max-height: 500px;
+  width: 100%;
+}
+#stars {
+  width: 30%;
+}
+.mySlides {
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  /* filter: invert(50%) sepia(0%) saturate(622%) hue-rotate(111deg)
+    brightness(517%) contrast(100%); */
+  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%)
+    contrast(505%);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+h2 {
+  text-align: center;
+}
+#pynt {
+  display: none;
+}
+.form {
+  background-color: #f1f1f1;
+}
+.bedøm {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.bedøm p {
+  font-family: "Allerta", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.form {
+  margin: auto;
+  margin-top: -90px;
+}
+#bog {
+  width: 60%;
+  margin-top: 80px;
+}
+#testimonialh1 {
+  max-width: 500px;
+  padding: 15px 25px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: var(--blue);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#navn {
+  padding: 0.5rem;
+  background-color: var(--background_light);
+  border: var(--background_light);
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 55px;
+}
+textarea {
+  padding: 0.5rem;
+  background-color: var(--background_light);
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+  color: var(--blue);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+textarea::placeholder {
+  margin-top: 50px;
+}
+
+button {
+  padding: 15px 20px 15px 20px;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: solid;
+  border-color: var(--blue);
+  border-radius: 20px;
+  background-color: var(--blue);
+  color: var(--background_light);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Allerta", sans-serif;
+}
+
+button:hover {
+  background-color: var(--background_light);
+  color: var(--blue);
+  border-color: var(--blue);
+  border-radius: 20px;
+}
+
+#pynt2 {
+  display: none;
+}
+#sol {
+  display: none;
+}
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    max-width: 90%;
+  }
+  label {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  .prev,
+  .next {
+    width: 4%;
+    margin: 0 5%;
+  }
+  #bog {
+    width: 20%;
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1000px) {
+  .prev,
+  .next {
+    width: 3%;
+    margin: 0 14%;
+  }
+  #pynt {
+    display: block;
+    width: 10.5%;
+    rotate: -50deg;
+    margin-top: -80px;
+    margin-left: 84%;
+    margin-bottom: 0;
+  }
+  .form {
+    margin: auto;
+    margin-top: -100px;
+    background-color: var(--background_light);
+    border: 3px solid var(--blue);
+    max-width: 63%;
+    border-radius: 40px;
+  }
+  #pynt2 {
+    display: block;
+    width: 21%;
+    rotate: 120deg;
+    margin-top: -50px;
+    margin-left: 13%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 800px) {
+  .slideshow-container {
+    max-width: 100%;
+    background-color: var(--background_dark);
+    padding: 40px 0;
+    position: relative;
+    margin: 0 auto;
+    max-height: 280px;
+  }
+  #stars {
+    width: 16%;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -3%;
+  }
+
+  #sol {
+    display: block;
+    width: 28%;
+    margin-top: -4%;
+    margin-left: 70%;
+  }
+}
