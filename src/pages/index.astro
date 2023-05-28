@@ -1,6 +1,6 @@
 ---
 import "../pages/generel.css";
-import "../pages/index.css";
+import "../css/index.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
@@ -26,8 +26,10 @@ import Nyhed_card from "../components/Nyhed_card.astro";
     <Header />
     <main>
       <div class="hero">
-        <video src=""></video>
-        <p>Din server understøtter ikke denne video</p>
+        <video autoplay muted loop>
+          <source src="/video/testvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="om_nodeux">
         <figure class="blad_right">

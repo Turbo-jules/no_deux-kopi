@@ -1,19 +1,31 @@
 main {
   display: grid;
   grid-template-rows: repeat (6, 1fr);
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 /* --------- Hero --------- */
 .hero {
   grid-row: 1/2;
+  margin-bottom: 0;
 
   text-align: center;
+
+  width: 100%;
+  height: auto;
+
+  overflow: hidden;
+}
+.hero video {
+  width: 100%;
+  height: 100%;
 }
 
 /* --------- Om No Deux --------- */
 .om_nodeux {
   grid-row: 2/3;
+  margin-top: 0;
+  padding: 20px 0px 20px 0px;
 
   display: grid;
   grid-template-columns: 0.3fr 3fr 0.03fr;
@@ -123,6 +135,7 @@ figure.blad_left {
 
 .nyheder {
   grid-row: 3/4;
+  padding-top: 40px;
 
   max-width: 300px;
   margin: auto;
@@ -146,6 +159,7 @@ figure.blad_left {
 
 .some {
   grid-row: 6/7;
+  padding-top: 40px;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -182,6 +196,23 @@ figure.blad_left {
 }
 
 @media (min-width: 1200px) {
+  /* --------- Hero --------- */
+  .hero {
+    grid-row: 1/2;
+
+    text-align: center;
+
+    margin-bottom: 0;
+
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+  }
+  .hero video {
+    width: 100%;
+    height: 100%;
+  }
   /* --------- Om No Deux --------- */
   .om_nodeux {
     display: grid;
