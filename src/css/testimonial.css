@@ -36,8 +36,7 @@ img {
 .next:hover {
   /* filter: invert(50%) sepia(0%) saturate(622%) hue-rotate(111deg)
     brightness(517%) contrast(100%); */
-  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%)
-    contrast(505%);
+  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%) contrast(505%);
 }
 
 .fade {
