@@ -35,7 +35,20 @@ form.addEventListener("submit", (e) => {
   const obj = {
     name: form.elements.name.value,
     description: form.elements.long.value,
+    stars: form.elements.star.value,
   };
 
   addTestimonial(obj);
+});
+
+const stars = document.querySelectorAll(".fa-star");
+stars.forEach((star, index1) => {
+  star.addEventListener("click", () => {
+    stars.forEach((star, index2) => {
+      index1 >= index2
+        ? star.classList.add("fa-solid")
+        : star.classList.remove("fa-solid");
+      console.log(index1);
+    });
+  });
 });

@@ -36,7 +36,8 @@ img {
 .next:hover {
   /* filter: invert(50%) sepia(0%) saturate(622%) hue-rotate(111deg)
     brightness(517%) contrast(100%); */
-  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%) contrast(505%);
+  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%)
+    contrast(505%);
 }
 
 .fade {
@@ -120,6 +121,9 @@ textarea {
 textarea::placeholder {
   margin-top: 50px;
 }
+textarea:focus {
+  outline: none;
+}
 .txt-center {
   text-align: center;
 }
@@ -133,40 +137,37 @@ textarea::placeholder {
 }
 
 .rating {
-  width: 90px;
-  unicode-bidi: bidi-override;
-  direction: rtl;
+  width: 200px;
+  margin: auto;
   text-align: center;
   position: relative;
 }
 
 .rating > label {
-  float: right;
+  margin-top: 40px;
   display: inline;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  text-align: center;
   position: relative;
-  width: 1.1em;
+  font-size: 1.5em;
   cursor: pointer;
-  color: #000;
+  color: var(--blue);
 }
 
 .rating > label:hover,
 .rating > label:hover ~ label,
 .rating > input.radio-btn:checked ~ label {
-  color: transparent;
+  color: var(--blue);
 }
-textarea:focus {
-  outline: none;
-}
+
 .rating > label:hover:before,
 .rating > label:hover ~ label:before,
 .rating > input.radio-btn:checked ~ label:before,
 .rating > input.radio-btn:checked ~ label:before {
-  content: "\2605";
   position: absolute;
   left: 0;
-  color: #ffd700;
+  color: var(--blue);
 }
 button {
   padding: 15px 20px 15px 20px;
@@ -230,6 +231,36 @@ button:hover {
     margin-top: 80px;
   }
 }
+
+@media (min-width: 800px) {
+  .slideshow-container {
+    max-width: 100%;
+    background-color: var(--background_dark);
+    padding: 40px 0;
+    position: relative;
+    margin: 0 auto;
+    max-height: 280px;
+  }
+  .rating {
+    width: 500px;
+  }
+  .rating > label {
+    font-size: 3.1em;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -3%;
+  }
+
+  #sol {
+    display: block;
+    width: 28%;
+    margin-top: -4%;
+    margin-left: 70%;
+  }
+}
 @media (min-width: 1000px) {
   .prev,
   .next {
@@ -259,31 +290,5 @@ button:hover {
     margin-top: -50px;
     margin-left: 13%;
     margin-bottom: 0;
-  }
-}
-@media (min-width: 800px) {
-  .slideshow-container {
-    max-width: 100%;
-    background-color: var(--background_dark);
-    padding: 40px 0;
-    position: relative;
-    margin: 0 auto;
-    max-height: 280px;
-  }
-  #stars {
-    width: 16%;
-  }
-
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: -3%;
-  }
-
-  #sol {
-    display: block;
-    width: 28%;
-    margin-top: -4%;
-    margin-left: 70%;
   }
 }
