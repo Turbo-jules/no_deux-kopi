@@ -4,11 +4,7 @@ import Button from "../components/Button.astro";
 ---
 
 <div class="first_grid">
-  <img
-    class="img_mand"
-    src="public/webp/vinsmagning.webp"
-    alt="kniv og gafler"
-  />
+  <img class="img_mand" src="public/webp/vinsmagning.webp" alt="kniv og gafler" />
   <div class="text_box">
     <div class="order1">
       <img class="img_vin" src="public/svg/glas.svg" alt="vin smagning" />
@@ -16,16 +12,8 @@ import Button from "../components/Button.astro";
       <h2>250,-</h2>
     </div>
     <div class="order3">
-      <p>
-        Vinsmagning hos No Deux er for alle der elsker vin, eller gerne vil
-        overbevise deres venner om, at vin er det bedste. Vi har vores egen
-        vin-connoisseur og dækker op med både ost og kiks under eventet, som
-        varer i 2 timer.
-      </p>
-      <p>
-        Vi tilbyder en blandet pakke med 6 glas, 2 glas rødvin, 1 glas rosé, 2
-        glas hvidvin og 1 glas mousserende vin.
-      </p>
+      <p>Vinsmagning hos No Deux er for alle der elsker vin, eller gerne vil overbevise deres venner om, at vin er det bedste. Vi har vores egen vin-connoisseur og dækker op med både ost og kiks under eventet, som varer i 2 timer.</p>
+      <p>Vi tilbyder en blandet pakke med 6 glas, 2 glas rødvin, 1 glas rosé, 2 glas hvidvin og 1 glas mousserende vin.</p>
     </div>
     <div class="knap"><Button text="BESTIL NU" /></div>
   </div>
@@ -73,7 +61,6 @@ import Button from "../components/Button.astro";
       }
       .text_box {
         padding: 40px;
-        align-items: flex-start;
       }
 
       .img_vin {
@@ -82,6 +69,16 @@ import Button from "../components/Button.astro";
       .knap {
         margin-top: 20px;
         align-self: flex-start;
+      }
+
+      .knap {
+        order: 0;
+      }
+      .order1 {
+        order: 0;
+      }
+      .order3 {
+        order: 0;
       }
     }
   </style>
