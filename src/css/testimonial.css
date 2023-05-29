@@ -17,6 +17,9 @@ img {
   margin-top: 10px;
   margin-bottom: 40px;
 }
+.stjerner {
+  height: 35px;
+}
 .prev,
 .next {
   cursor: pointer;
@@ -244,6 +247,7 @@ button:hover {
   #stars {
     width: 18%;
   }
+
   .rating {
     width: 500px;
   }
