@@ -1,25 +1,27 @@
 ---
 import "../css/generel.css";
 import Button from "../components/Button.astro";
+const { image, alt, image2, alt2, headline, pris, text, href } = Astro.props;
 ---
 
 <div class="first_grid">
-  <img class="img_mand" src="public/webp/vinsmagning.webp" alt="kniv og gafler" />
+  <figure class="img_container">
+    <img src={image} alt={alt} />
+  </figure>
   <div class="text_box">
     <div class="order1">
-      <img class="img_vin" src="public/svg/glas.svg" alt="vin smagning" />
-      <h1>Vinsmagning</h1>
-      <h2>250,-</h2>
+      <img class="img_vin" src={image2} alt={alt2} />
+      <h1>{headline}</h1>
+      <h2>{pris}</h2>
     </div>
     <div class="order3">
-      <p>Vinsmagning hos No Deux er for alle der elsker vin, eller gerne vil overbevise deres venner om, at vin er det bedste. Vi har vores egen vin-connoisseur og dækker op med både ost og kiks under eventet, som varer i 2 timer.</p>
-      <p>Vi tilbyder en blandet pakke med 6 glas, 2 glas rødvin, 1 glas rosé, 2 glas hvidvin og 1 glas mousserende vin.</p>
+      <p>{text}</p>
     </div>
     <div class="knap"><Button text="BESTIL NU" /></div>
   </div>
 
   <style>
-    .img_mand {
+    figure.img_container img {
       border-radius: 40px;
     }
     .img_vin {
