@@ -1,6 +1,6 @@
 ---
 import Button from "../components/Button.astro";
-const { image, alt, headline, text, href } = Astro.props;
+const { image, alt, headline, text, knap, href } = Astro.props;
 ---
 
 <div class="nyheds_card">
@@ -10,7 +10,7 @@ const { image, alt, headline, text, href } = Astro.props;
   <div class="nyheds_card_text">
     <h3>{headline}</h3>
     <p>{text}</p>
-    <div class="laes_mere"><Button text="Læs Mere" href="{href}" /></div>
+    <div class="laes_mere"><Button text={knap} href="{href}" /></div>
   </div>
 </div>
 
