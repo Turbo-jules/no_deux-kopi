@@ -1,5 +1,5 @@
 ---
-import "../pages/generel.css";
+import "../css/generel.css";
 import Button from "../components/Button.astro";
 ---
 
@@ -14,10 +14,21 @@ import Button from "../components/Button.astro";
       <p><a href="#">Info@nodeux.dk</a></p>
       <p>CVR: 43250485</p>
       <br />
-      <a href="https://www.instagram.com/nodeux_cph/?hl=en" target="”_blank”"> <img class="some_logo" src="/svg/some_instagram.svg" alt="instagram" /></a>
-      <a href="https://www.facebook.com/profile.php?id=100083668621682" target="”_blank”"> <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a>
+      <a href="https://www.instagram.com/nodeux_cph/?hl=en" target="”_blank”">
+        <img
+          class="some_logo"
+          src="/svg/some_instagram.svg"
+          alt="instagram"
+        /></a
+      >
+      <a
+        href="https://www.facebook.com/profile.php?id=100083668621682"
+        target="”_blank”"
+      >
+        <img class="some_logo" src="/svg/some_facebook.svg" alt="facebook" /></a
+      >
     </div>
-    <div class="textalign_center åbningstider_margin">
+    <div class="åbningstider_margin">
       <h2>Åbningstider</h2>
       <p>Søndag - Mandag</p>
       <p><b>Lukket</b></p>
@@ -29,102 +40,140 @@ import Button from "../components/Button.astro";
       <p><b>kl. 12.00-00.00</b></p>
     </div>
     <div class="grid_tilmeld_mail">
-      <div>
-        <h2>Tilmeld dig vores mail</h2>
+      <h2>Tilmeld dig vores mail</h2>
+      <div class="input">
         <input type="text" placeholder="Email*" />
-        <hr style="height:1px;width:90%;border-width:0;background-color:var(--blue)" />
+        <hr
+          style="height:1px;width:90%;border-width:0;background-color:var(--blue)"
+        />
       </div>
       <div class="footer_knap">
-        <Button text="TILMELD" href="#" />
+        <Button text="tilmeld" href="#" />
       </div>
     </div>
     <div>
-      <img class="footer_man_size" src="svg/footer_man.svg" alt="No Deux Maskot" />
+      <img
+        class="footer_man_size"
+        src="svg/footer_man.svg"
+        alt="No Deux Maskot"
+      />
     </div>
   </div>
-</footer>
 
-<style>
-  .textalign_center {
-    text-align: center;
-  }
-  .grid_tilmeld_mail {
-    margin-left: 40px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .åbningstider_margin {
-    margin-top: 40px;
-  }
-  .some_logo {
-    width: 10%;
-    display: inline;
-  }
-  h2 {
-    margin-bottom: 10px;
-  }
-  .footer_knap {
-    margin-top: 63px;
-  }
-  .footer_man_size {
-    width: 70%;
-    margin-top: 50px;
-    float: right;
-  }
-  a {
-    text-decoration: none;
-    color: var(--blue);
-  }
-
-  /*********** INPUT ***********/
-  input {
-    border: none;
-    height: 30px;
-    font-family: "brandon-grotesque", sans-serif;
-    font-size: 1.3rem;
-    color: var(--blue);
-    width: 500px;
-    background-color: var(--background_light);
-    margin-top: 20px;
-  }
-
-  input:focus {
-    outline: none;
-  }
-
-  input::placeholder {
-    color: var(--blue);
-    font-family: "brandon-grotesque", sans-serif;
-    font-size: 1.3rem;
-  }
-  /*********** MEDIA QUERY ***********/
-  @media (min-width: 1100px) {
-    /*********** GRID ***********/
-    .grid_footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 3fr 1fr;
+  <style>
+    footer {
+      margin-top: 20px;
+    }
+    .textalign_center {
+      text-align: center;
     }
     .grid_tilmeld_mail {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 20px;
-      padding-left: 70px;
+      text-align: center;
     }
-    /*********** SIZE ***********/
 
+    .åbningstider_margin {
+      margin-top: 40px;
+      text-align: center;
+    }
     .some_logo {
-      width: 15%;
+      width: 10%;
       display: inline;
     }
-    .åbningstider_margin,
-    .tilmeld_margin {
-      margin-top: 0;
+    h2 {
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+    .footer_knap {
+      margin-top: 63px;
+      grid-column: 2/3;
+      grid-row: 2/3;
     }
     .footer_man_size {
-      width: 100%;
+      width: 70%;
+      margin: auto;
+      margin-top: 50px;
     }
-    .grid_tilmeld_mail {
-      text-align: left;
+    a {
+      text-decoration: none;
+      color: var(--blue);
     }
-  }
-</style>
+
+    /*********** INPUT ***********/
+    input {
+      border: none;
+      height: 30px;
+      font-family: "brandon-grotesque", sans-serif;
+      font-size: 1.3rem;
+      color: var(--blue);
+      background-color: var(--background_light);
+      margin-top: 20px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input::placeholder {
+      color: var(--blue);
+      font-family: "brandon-grotesque", sans-serif;
+      font-size: 1.3rem;
+    }
+    /*********** MEDIA QUERY ***********/
+    @media (min-width: 1100px) {
+      /*********** GRID ***********/
+      .grid_footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        margin-left: 10px;
+      }
+      .textalign_center {
+        text-align: left;
+        margin-left: 40px;
+      }
+      .textalign_center h2 {
+        text-align: left;
+      }
+      .grid_tilmeld_mail {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        margin-left: 40px;
+        gap: 20px;
+        padding-left: 70px;
+      }
+      .grid_tilmeld_mail h2 {
+        float: left;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .footer_knap {
+        margin-top: 0;
+      }
+      .input {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      /*********** SIZE ***********/
+
+      .some_logo {
+        width: 15%;
+        display: inline;
+      }
+      .åbningstider_margin,
+      .tilmeld_margin {
+        margin-top: 0;
+      }
+      .footer_man_size {
+        width: 100%;
+        float: right;
+      }
+      .grid_tilmeld_mail {
+        text-align: left;
+      }
+    }
+  </style>
+</footer>

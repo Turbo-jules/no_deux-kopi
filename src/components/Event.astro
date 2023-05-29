@@ -1,0 +1,88 @@
+---
+import "../css/generel.css";
+import Button from "../components/Button.astro";
+---
+
+<div class="first_grid">
+  <img
+    class="img_mand"
+    src="public/webp/vinsmagning.webp"
+    alt="kniv og gafler"
+  />
+  <div class="text_box">
+    <div class="order1">
+      <img class="img_vin" src="public/svg/glas.svg" alt="vin smagning" />
+      <h1>Vinsmagning</h1>
+      <h2>250,-</h2>
+    </div>
+    <div class="order3">
+      <p>
+        Vinsmagning hos No Deux er for alle der elsker vin, eller gerne vil
+        overbevise deres venner om, at vin er det bedste. Vi har vores egen
+        vin-connoisseur og dækker op med både ost og kiks under eventet, som
+        varer i 2 timer.
+      </p>
+      <p>
+        Vi tilbyder en blandet pakke med 6 glas, 2 glas rødvin, 1 glas rosé, 2
+        glas hvidvin og 1 glas mousserende vin.
+      </p>
+    </div>
+    <div class="knap"><Button text="BESTIL NU" /></div>
+  </div>
+
+  <style>
+    .img_mand {
+      border-radius: 40px;
+    }
+    .img_vin {
+      margin-top: 10px;
+      height: 40vw;
+    }
+    .first_grid {
+      gap: 30px;
+      margin-inline: 40px;
+    }
+
+    .text_box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .knap {
+      margin: 20px 0 40px 0;
+      align-self: center;
+      order: -2;
+    }
+    .order1 {
+      order: -3;
+      text-align: center;
+      gap: 10px;
+    }
+    .order3 {
+      order: -1;
+    }
+
+    @media (min-width: 750px) {
+      .first_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .first_grid:first-child {
+        align-items: center;
+      }
+      .text_box {
+        padding: 40px;
+        align-items: flex-start;
+      }
+
+      .img_vin {
+        height: 20vw;
+      }
+      .knap {
+        margin-top: 20px;
+        align-self: flex-start;
+      }
+    }
+  </style>
+</div>
