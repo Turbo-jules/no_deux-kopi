@@ -135,7 +135,7 @@ figure.blad_left {
 
 .nyheder {
   grid-row: 3/4;
-  padding-top: 40px;
+  padding: 40px 0px;
 
   max-width: 300px;
   margin: auto;
