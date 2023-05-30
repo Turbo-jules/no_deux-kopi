@@ -28,7 +28,7 @@ main {
   display: grid;
   grid-template-columns: 0.3fr 3fr 0.03fr;
   /* grid-template-rows: 0.2fr 0.5fr 0.5fr 0.8fr 1fr 0.8fr 0.2fr 0.2fr; */
-  grid-template-rows: 0.07fr 0.07fr 0.2fr 0.6fr 0.4fr 0.8fr 0.2fr 0.07fr;
+  grid-template-rows: 0.07fr 0.07fr 0.35fr 0.6fr 0.4fr 0.8fr 0.2fr 0.07fr;
   gap: 10px;
 
   background-color: var(--background_dark);
@@ -61,7 +61,7 @@ figure.blad_right {
   display: grid;
   grid-template-rows: 0.15fr 0.8fr 0.15fr;
   gap: 15px;
-  align-self: center;
+  align-self: start;
 }
 figure.om_nodeux_b1 {
   grid-column: 2/3;
@@ -98,7 +98,7 @@ figure.om_nodeux_b2 {
   display: grid;
   grid-template-rows: 0.08fr 1.5fr 0.15fr;
   gap: 20px;
-  align-self: center;
+  align-self: start;
 }
 
 .fransk_menu_text {
