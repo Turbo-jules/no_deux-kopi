@@ -42,7 +42,8 @@ body {
 /*********** TEXT ***********/
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 180%;
 }
 h2 {
   font-family: "Allerta", sans-serif;
