@@ -1,12 +1,12 @@
 ---
 import "../css/generel.css";
 import Button from "../components/Button.astro";
-const { image, alt, image2, alt2, headline, pris, text } = Astro.props;
+const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
 ---
 
 <div class="first_grid">
   <figure class="img_container">
-    <img src={image} alt={alt} />
+    <img class={variant} src={image} alt={alt} />
   </figure>
   <div class="text_box">
     <div class="order1">
@@ -22,9 +22,17 @@ const { image, alt, image2, alt2, headline, pris, text } = Astro.props;
 </div>
 
 <style>
+  .vin {
+    aspect-ratio: 610/662;
+    height: 100%;
+    width: 100%;
+  }
+  .picnic {
+    aspect-ratio: 552/610;
+    height: 100%;
+    width: 100%;
+  }
   figure.img_container img {
-    with: 100%;
-    height: auto;
     border-radius: 40px;
   }
   .img_vin {
