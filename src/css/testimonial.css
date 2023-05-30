@@ -209,14 +209,7 @@ button:hover {
     opacity: 1;
   }
 }
-@media (max-width: 800px) {
-  form {
-    max-width: 90%;
-  }
-  label {
-    text-align: center;
-  }
-}
+
 @media (max-width: 500px) {
   .prev,
   .next {
@@ -234,7 +227,17 @@ button:hover {
     margin-top: 80px;
   }
 }
-
+@media (max-width: 800px) {
+  .slideshow-container {
+    max-height: 550px;
+  }
+  form {
+    max-width: 90%;
+  }
+  label {
+    text-align: center;
+  }
+}
 @media (min-width: 800px) {
   .slideshow-container {
     max-width: 100%;
