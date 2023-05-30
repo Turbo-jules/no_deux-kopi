@@ -4,7 +4,7 @@ import Button from "../components/Button.astro";
 ---
 
 <footer>
-  <img src="/svg/footer_line.svg" alt="footer line" />
+  <img class="footer_line" src="/svg/footer_line.svg" alt="footer line" />
   <div class="grid_footer">
     <div class="textalign_center">
       <h2>Kontakt</h2>
@@ -59,6 +59,11 @@ import Button from "../components/Button.astro";
   </div>
 
   <style>
+    .footer_line {
+      aspect-ratio: 1423/66;
+      width: 100%;
+      height: 100%;
+    }
     footer {
       margin-top: 20px;
     }
