@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  gap: 100px;
+  gap: 40px;
   margin-block: 5vw;
   align-items: center;
 }
@@ -17,6 +17,7 @@ main {
   .nyheder_card {
     display: flex;
     flex-direction: row;
+    gap: 100px;
     align-items: stretch;
     justify-content: center;
     margin-inline: auto;
