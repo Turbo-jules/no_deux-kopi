@@ -38,8 +38,7 @@
 .next:hover {
   /* filter: invert(50%) sepia(0%) saturate(622%) hue-rotate(111deg)
     brightness(517%) contrast(100%); */
-  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%)
-    contrast(505%);
+  filter: invert(80%) sepia(3%) saturate(1374%) hue-rotate(0deg) brightness(93%) contrast(505%);
 }
 
 .fade {
@@ -279,7 +278,7 @@ button:hover {
   #pynt {
     display: block;
     width: 10.5%;
-    rotate: -50deg;
+    transform: rotate(-50deg);
     margin-top: -80px;
     margin-left: 84%;
     margin-bottom: 0;
@@ -295,7 +294,7 @@ button:hover {
   #pynt2 {
     display: block;
     width: 21%;
-    rotate: 120deg;
+    transform: rotate(120deg);
     margin-top: -50px;
     margin-left: 13%;
     margin-bottom: 0;
