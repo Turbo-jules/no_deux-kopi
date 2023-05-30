@@ -416,8 +416,10 @@ figure.blad_left {
     align-self: start;
   }
   .blad_right img {
+    aspect-ratio: 181/322;
     transform: rotate(-45deg);
     width: 100%;
+    height: 100%;
     /* margin: 0px 0px 0px -20px; */
   }
   figure.blad_left {
@@ -428,8 +430,10 @@ figure.blad_left {
     align-self: center;
   }
   .blad_left img {
+    aspect-ratio: 181/322;
     transform: rotate(130deg);
     width: 100%;
+    height: 100%;
     margin: 15px 0px 0px 25px;
   }
 }
