@@ -25,9 +25,16 @@ import TilTop from "../components/TilTop.astro";
     <link rel="stylesheet" href="https://use.typekit.net/lvb7hqu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+    <link rel="preload" as="font" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
+      rel="stylesheet"
+    />
     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>No Deux - fransk bistro</title>
   </head>
@@ -37,7 +44,10 @@ import TilTop from "../components/TilTop.astro";
       <TilTop />
       <div class="hero">
         <video autoplay muted loop>
-          <source src="https://matildemona.dk/kea/eksamen/hero_kort_tekst.webm" type="video/webm" />
+          <source
+            src="https://matildemona.dk/kea/eksamen/hero_kort_tekst.webm"
+            type="video/webm"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -51,8 +61,10 @@ import TilTop from "../components/TilTop.astro";
         <div class="hvad_er_nodeux">
           <h2>Hvad er No Deux</h2>
           <p>
-            Hos Bistro No Deux serverer vi lækre franske retter med nøje udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig fransk bistro i Paris. Konceptet er inspireret af restaurantens beliggenhed og derfor kaldes No Deux også en
-            “vintage” bistro.
+            Hos Bistro No Deux serverer vi lækre franske retter med nøje
+            udvalgte vine. Man får nemt fornemmelsen af at sidde på en rigtig
+            fransk bistro i Paris. Konceptet er inspireret af restaurantens
+            beliggenhed og derfor kaldes No Deux også en “vintage” bistro.
           </p>
           <div><Button text="Book Bord" /></div>
         </div>
@@ -62,10 +74,25 @@ import TilTop from "../components/TilTop.astro";
         <div class="fransk_menu">
           <h2>Fransk Menu</h2>
           <div class="fransk_menu_text">
-            <p>Menuen er fransk, til dels bestemt af årstiden. Der serveres, bl.a. klassisk Moules frites og Tartare sammen med lækker fransk vin.</p>
-            <p>Indretningen af restauranten er fransk landstil med gamle vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en hyggelig atmosfære.</p>
-            <p>Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og når vi går koldere dage i møde, rykker vi den gode stemning med indenfor.</p>
-            <p>Vi vil gøre vores bedste for at jeres besøg i Bistro No deux bliver en god og hyggelig oplevelse.</p>
+            <p>
+              Menuen er fransk, til dels bestemt af årstiden. Der serveres,
+              bl.a. klassisk Moules frites og Tartare sammen med lækker fransk
+              vin.
+            </p>
+            <p>
+              Indretningen af restauranten er fransk landstil med gamle
+              vinkasser og køkkenudstyr; alt sammen medvirkende til at skabe en
+              hyggelig atmosfære.
+            </p>
+            <p>
+              Om sommeren, i godt vejr, er der mulighed for at sidde udenfor og
+              når vi går koldere dage i møde, rykker vi den gode stemning med
+              indenfor.
+            </p>
+            <p>
+              Vi vil gøre vores bedste for at jeres besøg i Bistro No deux
+              bliver en god og hyggelig oplevelse.
+            </p>
           </div>
           <div>
             <Button text="Vores Menu" />
@@ -86,7 +113,9 @@ import TilTop from "../components/TilTop.astro";
           </figure>
         </div>
         <p>
-          Kom og prøv vores vinsmagning eller tag en picnickurv med i parken. <br /> Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med venner, familie eller gøre solo.
+          Kom og prøv vores vinsmagning eller tag en picnickurv med i parken. <br
+          /> Som noget nyt tilbyder vi hyggelige arrangementer, som du kan dele med
+          venner, familie eller gøre solo.
         </p>
         <div class="nyheder_card_row">
           <Nyhed_card
@@ -131,6 +160,9 @@ import TilTop from "../components/TilTop.astro";
     </main>
     <Footer />
     <script src="../js/testimonials.js"></script>
-    <script src="https://kit.fontawesome.com/cefafbdb36.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cefafbdb36.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
