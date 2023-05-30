@@ -70,7 +70,9 @@
   margin-top: -90px;
 }
 #bog {
+  aspect-ratio: 597/490;
   width: 60%;
+  height: 60%;
   margin-top: 120px;
 }
 #testimonialh1 {
@@ -222,6 +224,8 @@ button:hover {
     margin: 0 5%;
   }
   #bog {
+    aspect-ratio: 598/490;
+    height: 20%;
     width: 20%;
     margin-top: 80px;
   }
