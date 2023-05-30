@@ -3,7 +3,6 @@
   padding: 60px 0;
   position: relative;
   margin: 0 auto;
-  max-height: 500px;
   width: 100%;
 }
 #stars {
@@ -229,7 +228,7 @@ button:hover {
 }
 @media (max-width: 800px) {
   .slideshow-container {
-    max-height: 550px;
+    max-height: 680px;
   }
   form {
     max-width: 90%;
@@ -245,7 +244,7 @@ button:hover {
     padding: 40px 0;
     position: relative;
     margin: 0 auto;
-    max-height: 280px;
+    height: 330px;
   }
   #stars {
     width: 18%;
