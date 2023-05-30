@@ -196,7 +196,10 @@ figure.blad_left {
   gap: 40px;
 }
 .some_opslag img {
+  aspect-ratio: 400/521;
   border-radius: 40px;
+  width: 95%;
+  height: 95;
 }
 
 /* ----------pc---------- */
@@ -410,9 +413,10 @@ figure.blad_left {
     gap: 80px;
   }
   .some_opslag img {
+    aspect-ratio: 400/521;
     border-radius: 40px;
-    width: 400px;
-    height: auto;
+    width: 95%;
+    height: 95%;
   }
 }
 @media (min-width: 1400px) {
