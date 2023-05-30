@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import Event from "../components/Event.astro";
 import Vin_icon from "../components/Vin_icon.astro";
 import Favicon from "../components/Favicon.astro";
+import TilTop from "../components/TilTop.astro";
 ---
 
 <html lang="da">
@@ -21,19 +22,15 @@ import Favicon from "../components/Favicon.astro";
     <title>No Deux' vinsmagning</title>
     <Favicon />
     <link rel="preload" as="font" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <Header />
     <main>
+      <TilTop />
+
       <Event
         image="/webp/vinsmagning.webp"
         alt="vinsmagning"
