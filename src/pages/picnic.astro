@@ -6,6 +6,8 @@ import Footer from "../components/Footer.astro";
 import Event from "../components/Event.astro";
 import NyhedCard from "../components/Nyhed_card.astro";
 import Favicon from "../components/Favicon.astro";
+import Picnic_card from "../components/Picnic_card.astro";
+import TilTop from "../components/TilTop.astro";
 ---
 
 <html lang="da">
@@ -21,19 +23,15 @@ import Favicon from "../components/Favicon.astro";
     <title>No Deux' picnic</title>
     <Favicon />
     <link rel="preload" as="font" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <Header />
     <main>
+      <TilTop />
+
       <Event
         variant="picnic"
         image="/webp/picnic-main.webp"
@@ -45,18 +43,20 @@ import Favicon from "../components/Favicon.astro";
       />
 
       <div class="nyheder_card">
-        <NyhedCard
+        <Picnic_card
           image="/webp/picnic_card.webp"
           alt="picnic"
           headline="Favorit Kurv"
+          pris="700,-"
           text="Farvorit kurven er en samlet pakke med lækre klassiske favorit retter. Denne kurv er for to personer og indebærer to forretter, to hovedretter og en dele dessert. Dertil et ostebord og en valgfri vin."
           href="#"
           knap="BESTIL NU"
         />
-        <NyhedCard
+        <Picnic_card
           image="/webp/mystery_picnic.webp"
           alt="picnic"
           headline="Mystery Kurv"
+          pris="250,-"
           text="Mystery kurven er til dig der godt kan lide at blive overrasket. Hver måltidsoverraskelse er nøje udvalgt og er sammensat af friske råvarer og spændende smagsoplevelser."
           href="#"
           knap="BESTIL NU"
