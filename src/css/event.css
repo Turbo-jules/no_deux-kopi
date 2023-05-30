@@ -11,14 +11,14 @@ main {
   margin-inline: auto;
   gap: 40px;
   margin-block: 5vw;
-  align-items: stretch;
+  align-items: center;
 }
 
 @media (min-width: 750px) {
   .nyheder_card {
     display: flex;
     flex-direction: row;
-
+    align-items: stretch;
     justify-content: center;
     margin-inline: auto;
   }
