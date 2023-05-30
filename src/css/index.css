@@ -72,9 +72,8 @@ figure.om_nodeux_b1 {
   border-radius: 40px;
 }
 .om_nodeux_b1 img {
-  aspect-ratio: 567/451;
   border-radius: 40px;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
