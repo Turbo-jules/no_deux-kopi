@@ -331,10 +331,10 @@ figure.blad_left {
 
   .nyheder_titel {
     display: grid;
-    grid-template-columns: 1fr 0.045fr;
+    grid-template-columns: 1fr 0.1fr;
     grid-template-rows: 0.2fr 0.1fr;
     justify-items: center;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .nyheder h2 {
@@ -346,7 +346,8 @@ figure.blad_left {
     display: block;
     grid-column: 1/3;
     grid-row: 1/3;
-    width: 15%;
+    width: 14%;
+    margin-top: 0.5%;
   }
   .nyheder_boenne img {
     width: 100%;
