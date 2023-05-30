@@ -24,17 +24,21 @@ const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
 <style>
   .vin {
     aspect-ratio: 610/662;
-    height: 100%;
+    height: auto;
     width: 100%;
   }
   .picnic {
     aspect-ratio: 552/610;
-    height: 100%;
+    height: auto%;
     width: 100%;
   }
   figure.img_container img {
     border-radius: 40px;
   }
+  figure.img_container {
+    align-self: center;
+  }
+
   .img_vin {
     margin-top: 10px;
     height: 40vw;
