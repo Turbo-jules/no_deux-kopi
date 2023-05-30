@@ -83,10 +83,9 @@ figure.om_nodeux_b2 {
   grid-row: 5/6;
 }
 .om_nodeux_b2 img {
-  aspect-ratio: 470/578;
   border-radius: 40px;
   margin-top: 20px;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
