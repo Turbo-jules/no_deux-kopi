@@ -10,12 +10,12 @@ const { image, alt, headline, text, knap, href } = Astro.props;
   <div class="nyheds_card_text">
     <h3>{headline}</h3>
     <p>{text}</p>
-    <div class="laes_mere"><Button text={knap} href="{href}" /></div>
+    <div class="laes_mere"><Button text={knap} href={href} /></div>
   </div>
 </div>
 
 <style>
-  div.nyheds_card {
+  .nyheds_card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -39,7 +39,6 @@ const { image, alt, headline, text, knap, href } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: center;
   }
 
   .nyheds_card_text h3 {
