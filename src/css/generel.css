@@ -28,7 +28,7 @@ main {
 body {
   background-color: var(--background_light);
   color: var(--blue);
-  font-family: "Allerta", sans-serif;
+  font-family: "Allerta", sans-serif, "Gill Sans";
 }
 
 /*********** COLORS ***********/
@@ -41,12 +41,12 @@ body {
 
 /*********** TEXT ***********/
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif, "Gill Sans";
   font-size: 1rem;
   line-height: 180%;
 }
 h2 {
-  font-family: "Allerta", sans-serif;
+  font-family: "Allerta", sans-serif, "Gill Sans";
   font-weight: 500;
   font-size: 1.7rem;
 }
