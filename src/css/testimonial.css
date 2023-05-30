@@ -3,7 +3,6 @@
   padding: 60px 0;
   position: relative;
   margin: 0 auto;
-  max-height: 500px;
   width: 100%;
 }
 #stars {
@@ -245,7 +244,7 @@ button:hover {
     padding: 40px 0;
     position: relative;
     margin: 0 auto;
-    max-height: 330px;
+    height: 330px;
   }
   #stars {
     width: 18%;
