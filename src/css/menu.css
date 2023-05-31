@@ -4,17 +4,7 @@
 .fire_retters {
   margin-top: 100px;
 }
-.øverst {
-  background-image: url("/svg/menubillede.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.nederst {
-  background-image: url("/svg/menubillede2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
+
 h2 {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -41,7 +31,19 @@ h3 {
   border-radius: 40px;
   text-align: center;
 }
-
+@media (min-width: 400px) {
+  .øverst {
+    background-image: url("/svg/menubillede.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .nederst {
+    background-image: url("/svg/menubillede2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
 @media (min-width: 800px) {
   .menu_border {
     margin: auto;
