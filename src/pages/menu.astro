@@ -1,0 +1,39 @@
+---
+import "../css/generel.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Favicon from "../components/Favicon.astro";
+import TilTop from "../components/TilTop.astro";
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="noindex" />
+    <!-- Fonte -->
+    <Favicon />
+    <link rel="stylesheet" href="https://use.typekit.net/lvb7hqu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="font" />
+    <!-- Allerta -->
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+
+    <title>No Deux' menukort</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <h2>HELLOOOO</h2>
+      <TilTop />
+    </main>
+    <Footer />
+    <style></style></body
+  >
+</html>

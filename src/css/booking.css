@@ -7,9 +7,17 @@
   margin-block: 5vw;
   align-items: center;
 }
+.booking {
+  text-align: center;
+  margin-inline: auto;
+  padding: 10px;
+  max-width: 500px;
+}
+.booking p {
+  margin-top: 20px;
+}
 
 .indhold {
-  text-align: center;
   margin-inline: auto;
 }
 
@@ -22,5 +30,8 @@
     justify-content: center;
     margin-inline: auto;
     margin-top: 50px;
+  }
+  .booking {
+    max-width: 50vw;
   }
 }
