@@ -1,5 +1,6 @@
 ---
 import "../css/generel.css";
+import "../css/menu.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Favicon from "../components/Favicon.astro";
@@ -20,9 +21,15 @@ import TilTop from "../components/TilTop.astro";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="font" />
     <!-- Allerta -->
-    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&display=swap"
+      rel="stylesheet"
+    />
     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>No Deux' menukort</title>
   </head>
@@ -31,8 +38,37 @@ import TilTop from "../components/TilTop.astro";
     <Header />
     <main>
       <TilTop />
+      <div class="menu_border">
+        <div class="øverst">
+          <h1 class="tre_retters">3-RETTERS MENU</h1>
+          <h2>Asperges blanches</h2>
+          <p class="asperges">
+            Blancherede hvide asparges med mousseline sauce
+          </p><p>Tilføj håndpillede rejer + 45,-</p>
+          <h2>Farseret vagtel</h2>
+          <p class="vagtel">
+            Svampe farseret vagtel med sauteret grønt, nye kartofler,
+          </p><p>serveres med morkel blanquette</p>
+          <h2>Crème Brûlée</h2>
+          <h3>375,-</h3>
+        </div>
+        <div class="nederst">
+          <h1 class="fire_retters">4-RETTERS MENU</h1>
+          <h2>Snacks au deux</h2>
+          <p>Dagens 3 overraskelser fra køkkenet</p>
+          <h2>Asperges blanches</h2>
+          <p class="asperges">
+            Blancherede hvide asparges med mousseline sauce
+          </p><p>Tilføj håndpillede rejer + 45,-</p>
+          <h2>Farseret vagtel</h2>
+          <p class="vagtel">
+            Svampe farseret vagtel med sauteret grønt, nye kartofler,
+          </p><p>serveres med morkel blanquette</p>
+          <h2>Crème Brûlée</h2>
+          <h3 class="pris">405,-</h3>
+        </div>
+      </div>
     </main>
     <Footer />
-    <style></style></body
-  >
+  </body>
 </html>

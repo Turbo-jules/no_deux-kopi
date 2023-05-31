@@ -1,0 +1,56 @@
+.tre_retters {
+  padding-top: 120px;
+}
+.fire_retters {
+  margin-top: 100px;
+}
+.øverst {
+  background-image: url("/svg/menubillede.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.nederst {
+  background-image: url("/svg/menubillede2.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 6px;
+  line-height: 1.5;
+  color: #3f5f9b;
+}
+h3 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.pris {
+  padding-bottom: 120px;
+}
+.menu_border {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--background_light);
+  border: 3px solid var(--blue);
+  max-width: 90%;
+  border-radius: 40px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .menu_border {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--background_light);
+    border: 3px solid var(--blue);
+    max-width: 70%;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
