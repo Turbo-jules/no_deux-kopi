@@ -1,0 +1,48 @@
+---
+import "../css/generel.css";
+import "../css/event.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Event from "../components/Event.astro";
+import Vin_icon from "../components/Vin_icon.astro";
+import Favicon from "../components/Favicon.astro";
+import TilTop from "../components/TilTop.astro";
+import NyhedCard from "../components/Nyhed_card.astro";
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Tag på en udsøgt fransk vinsmagningsrejse med No Deuxs fortryllende 'Vin smagnings'-oplevelse. Fordyb dig i ​​vores hyggelige bistroatmosfære, mens du nyder et dejligt udvalg af franske vine, som er omhyggeligt udvalgt for at behage din gane. Forkæl dig selv med de rige smag og aromaer, der definerer essensen af ​​fransk vinkultur, dygtigt parret med vores lækre køkken. Oplev kunsten at værdsætte vin i en atmosfære, der udstråler varme og charme. Slut dig til No Deux for et uforglemmeligt vinsmagningseventyr i hjertet af fransk gastronomi."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <meta name="robots" content="noindex" /> -->
+    <title>No Deux' book dit bord</title>
+    <Favicon />
+    <link rel="preload" as="font" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <TilTop />
+      <NyhedCard image="/webp/picnic_card.webp" alt="Reservation" headline="Reservation" text="Book dit bord her til en hyggelig aften hos No Deux." knap="Book dit bord" />
+      <NyhedCard image="/webp/picnic_card.webp" alt="Reservation" headline="Ved Vinduet" text="Book et bord på vores dejlige højbord i vinduet, med udsigt til det travle København." knap="Book dit bord" />
+      <NyhedCard
+        image="/webp/picnic_card.webp"
+        alt="Reservation"
+        headline="Sen aften"
+        text="Book en sen reservation og få: et glas bobler. 2 retter, enten forret & hovedret, eller hovedret & dessert. Det hele koster kun 245,-"
+        knap="Book dit bord"
+      />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </body>
+</html>

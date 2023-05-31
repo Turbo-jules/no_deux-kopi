@@ -28,7 +28,7 @@ main {
   display: grid;
   grid-template-columns: 0.3fr 3fr 0.03fr;
   /* grid-template-rows: 0.2fr 0.5fr 0.5fr 0.8fr 1fr 0.8fr 0.2fr 0.2fr; */
-  grid-template-rows: 0.07fr 0.07fr 0.35fr 0.6fr 0.4fr 0.8fr 0.2fr 0.07fr;
+  grid-template-rows: 0.07fr 0.07fr 0.6fr 0.4fr 0.8fr 0.2fr 0.07fr;
   gap: 10px;
 
   background-color: var(--background_dark);
@@ -66,6 +66,7 @@ figure.blad_right {
 figure.om_nodeux_b1 {
   grid-column: 2/3;
   grid-row: 2/4;
+  display: none;
 
   overflow: hidden;
   border-radius: 40px;
@@ -253,6 +254,7 @@ figure.blad_left {
     grid-row: 2/4;
     overflow: hidden;
     border-radius: 40px;
+    display: block;
   }
   .om_nodeux_b1 img {
     border-radius: 40px;
