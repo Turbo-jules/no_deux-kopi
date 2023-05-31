@@ -1,21 +1,26 @@
-.booking_tilbud {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
+.booking_tilbud,
 .event_booking {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-inline: auto;
   gap: 40px;
-  margin-block: 10%;
+  margin-block: 5vw;
+  align-items: center;
 }
 
-.booking form {
-  display: flex;
-  flex-direction: row;
+.indhold {
+  text-align: center;
+  margin-inline: auto;
 }
 
-input[type="date"] {
-  width: fit-content;
+@media (min-width: 1200px) {
+  .booking_tilbud,
+  .event_booking {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 50px;
+  }
 }
