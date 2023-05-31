@@ -407,6 +407,11 @@ figure.blad_left {
     border-radius: 40px;
   }
 }
+@media (max-width: 500px) {
+  .book_knap {
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 1400px) {
   figure.blad_right {
     grid-column: 8/9;
