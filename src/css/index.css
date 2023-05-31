@@ -408,8 +408,8 @@ figure.blad_left {
   }
 }
 @media (max-width: 500px) {
-  .book_knap {
-    margin-bottom: 20px;
+  .om_nodeux_b2 img {
+    margin-top: 50px;
   }
 }
 @media (min-width: 1400px) {
