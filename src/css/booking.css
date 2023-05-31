@@ -1,0 +1,21 @@
+.booking_tilbud {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.event_booking {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-block: 10%;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="date"] {
+  width: fit-content;
+}

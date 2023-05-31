@@ -1,22 +1,19 @@
 ---
 import "../css/generel.css";
-import "../css/event.css";
+import "../css/booking.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Event from "../components/Event.astro";
-import Vin_icon from "../components/Vin_icon.astro";
 import Favicon from "../components/Favicon.astro";
 import TilTop from "../components/TilTop.astro";
-import NyhedCard from "../components/Nyhed_card.astro";
+import Nyhed_card from "../components/Nyhed_card.astro";
+import Picnic_card from "../components/Picnic_card.astro";
+import Booking_input from "../components/Booking_input.astro";
 ---
 
 <html lang="da">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Tag på en udsøgt fransk vinsmagningsrejse med No Deuxs fortryllende 'Vin smagnings'-oplevelse. Fordyb dig i ​​vores hyggelige bistroatmosfære, mens du nyder et dejligt udvalg af franske vine, som er omhyggeligt udvalgt for at behage din gane. Forkæl dig selv med de rige smag og aromaer, der definerer essensen af ​​fransk vinkultur, dygtigt parret med vores lækre køkken. Oplev kunsten at værdsætte vin i en atmosfære, der udstråler varme og charme. Slut dig til No Deux for et uforglemmeligt vinsmagningseventyr i hjertet af fransk gastronomi."
-    />
+    <meta name="description" content="book dit bord her" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <!-- <meta name="robots" content="noindex" /> -->
@@ -31,15 +28,51 @@ import NyhedCard from "../components/Nyhed_card.astro";
     <Header />
     <main>
       <TilTop />
-      <NyhedCard image="/webp/picnic_card.webp" alt="Reservation" headline="Reservation" text="Book dit bord her til en hyggelig aften hos No Deux." knap="Book dit bord" />
-      <NyhedCard image="/webp/picnic_card.webp" alt="Reservation" headline="Ved Vinduet" text="Book et bord på vores dejlige højbord i vinduet, med udsigt til det travle København." knap="Book dit bord" />
-      <NyhedCard
-        image="/webp/picnic_card.webp"
-        alt="Reservation"
-        headline="Sen aften"
-        text="Book en sen reservation og få: et glas bobler. 2 retter, enten forret & hovedret, eller hovedret & dessert. Det hele koster kun 245,-"
-        knap="Book dit bord"
-      />
+      <div class="booking">
+        <form action="">
+          <Booking_input />
+          <Booking_input />
+          <label for="tid">Tidspunkt</label>
+          <input type="date" />
+        </form>
+      </div>
+      <div class="booking_tilbud">
+        <Nyhed_card image="/webp/picnic_card.webp" alt="Reservation" headline="Reservation" text="Book dit bord her til en hyggelig aften hos No Deux." knap="Book dit bord" />
+        <Nyhed_card image="/webp/picnic_card.webp" alt="Reservation" headline="Ved Vinduet" text="Book et bord på vores dejlige højbord i vinduet, med udsigt til det travle København." knap="Book dit bord" />
+        <Nyhed_card
+          image="/webp/picnic_card.webp"
+          alt="Reservation"
+          headline="Sen aften"
+          text="Book en sen reservation og få: et glas bobler. 2 retter, enten forret & hovedret, eller hovedret & dessert. Det hele koster kun 245,-"
+          knap="Book dit bord"
+        />
+      </div>
+      <div class="event_booking">
+        <Picnic_card
+          image="/webp/vinsmagning_card.webp"
+          alt="Vinsmagning"
+          headline="Vinsmagning"
+          pris="250,-"
+          text="Kom til vinsmagning i vores hyggelige bistro. Vores vin connoisseur vil byde på både rødt, hvidt og moserende, ledsaget af lækre oste og kiks fra køkkenet."
+          knap="BESTIL NU"
+        />
+        <Picnic_card
+          image="/webp/picnic_card.webp"
+          alt="picnic"
+          headline="Favorit Kurv"
+          pris="700,-"
+          text="Farvorit kurven er en samlet pakke med lækre klassiske favorit retter. Denne kurv er for to personer og indebærer to forretter, to hovedretter og en dele dessert. Dertil et ostebord og en valgfri vin."
+          knap="BESTIL NU"
+        />
+        <Picnic_card
+          image="/webp/mystery_picnic.webp"
+          alt="picnic"
+          headline="Mystery Kurv"
+          pris="250,-"
+          text="Mystery kurven er til dig der godt kan lide at blive overrasket. Hver måltidsoverraskelse er nøje udvalgt og er sammensat af friske råvarer og spændende smagsoplevelser."
+          knap="BESTIL NU"
+        />
+      </div>
     </main>
     <footer>
       <Footer />
