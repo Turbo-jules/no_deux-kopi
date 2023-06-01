@@ -66,8 +66,9 @@
       border: 2px solid ${boxColor};\
       box-sizing: border-box;\
       border-radius: 6px;\
-      inline-size: 36px;\
-      block-size: 36px;\
+      inline-size: 46px;\
+      block-size: 46px;\
+      margin-top: 45px;
       margin-right:4px;\
       padding: .25rem;\
       cursor: pointer;\
