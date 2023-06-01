@@ -70,6 +70,7 @@
       block-size: 50px;\
       margin-top: 45px;
       margin-right:4px;\
+  
       padding: .25rem;\
       cursor: pointer;\
     }\
