@@ -68,6 +68,7 @@
       border-radius: 6px;\
       inline-size: 36px;\
       block-size: 36px;\
+      margin-right:4px;\
       padding: .25rem;\
       cursor: pointer;\
     }\
