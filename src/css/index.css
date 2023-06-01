@@ -37,6 +37,10 @@ main {
 .om_nodeux h2 {
   text-align: center;
 }
+.om_nodeux p {
+  max-width: 65ch;
+  margin: auto;
+}
 
 figure.blad_right {
   grid-column: 3/4;
