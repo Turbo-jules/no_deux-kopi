@@ -4,13 +4,18 @@
 .fire_retters {
   margin-top: 100px;
 }
-
+h1 {
+  max-width: 90%;
+  margin: auto;
+}
 h2 {
   margin-top: 50px;
   margin-bottom: 10px;
 }
 p {
   margin-top: 6px;
+  max-width: 90%;
+  margin: auto;
   line-height: 1.5;
   color: #3f5f9b;
 }
@@ -26,12 +31,13 @@ h3 {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: var(--background_light);
-  border: 3px solid var(--blue);
-  max-width: 90%;
+  border: 2px solid var(--blue);
+  padding: 1px;
+  max-width: 92%;
   border-radius: 40px;
   text-align: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .øverst {
     background-image: url("/svg/menubillede.svg");
     background-size: 100%;
