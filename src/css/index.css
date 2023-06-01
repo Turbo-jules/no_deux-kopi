@@ -28,7 +28,7 @@ main {
   display: grid;
   grid-template-columns: 0.3fr 3fr 0.03fr;
   /* grid-template-rows: 0.2fr 0.5fr 0.5fr 0.8fr 1fr 0.8fr 0.2fr 0.2fr; */
-  grid-template-rows: 0.07fr 0.07fr 0.6fr 0.4fr 1fr 0.07fr 0.07fr;
+
   gap: 10px;
 
   background-color: var(--background_dark);
