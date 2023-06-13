@@ -16,6 +16,7 @@ img {
   font-family: "brandon-grotesque", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Concert One", cursive;
+  font-family: "Varela Round", sans-serif;
 }
 
 /*********** STYLE ***********/
@@ -36,7 +37,7 @@ body {
   --background_light: #f4f3ef;
   --background_dark: #e8e6df;
   --blue: #13429a;
-  --overskrift: "Concert One", sans-serif, "Gill Sans";
+  --overskrift: "Concert One", cursive;
   /*--orange: #E76345;*/
 }
 
