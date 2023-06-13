@@ -17,6 +17,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-family: "Concert One", cursive;
   font-family: "Varela Round", sans-serif;
+  font-family: "Allerta", sans-serif, "Gill Sans";
 }
 
 /*********** STYLE ***********/
@@ -50,7 +51,7 @@ p {
 h2 {
   font-family: var(--overskrift);
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 button {
   margin: auto;
