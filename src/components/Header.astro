@@ -4,49 +4,51 @@ import "../css/generel.css";
 
 <header>
   <div id="header_indhold">
-    <a href="/"
-      ><img id="logo" src="/svg/nodeux_logo.svg" alt="No Deux Logo" /></a
-    >
-    <nav>
+    <a href="/"><img id="logo" src="/svg/nodeux_logo.svg" alt="No Deux Logo" /></a>
+    <nav id="menu">
       <ul>
         <li><a class="a_underline" href="/menu">Menu</a></li>
         <li class="dropcontainer">
-          <a class="a_underline dropbtn" href="#">Events</a>
+          <a class="a_underline dropbtn" id="under" href="#">Events</a>
           <ul class="dropcontent">
-            <li><a href="/vin">Vinsmagning</a></li>
-            <li><a href="/picnic">Picnic Kurv</a></li>
+            <li><a class="under" href="/vin">Vinsmagning</a></li>
+            <li><a class="under" href="/picnic">Picnic Kurv</a></li>
           </ul>
         </li>
         <li><a class="a_underline" href="/booking">Booking</a></li>
       </ul>
     </nav>
+    <button id="burger-menu">
+      <span></span>
+    </button>
   </div>
 </header>
 
+<script>
+  const burgerMenu = document.querySelector("#burger-menu");
+  const menu = document.querySelector("#menu");
+
+  burgerMenu.addEventListener("click", function () {
+    burgerMenu.classList.toggle("close");
+    menu.classList.toggle("overlay");
+  });
+</script>
 <style>
   #header_indhold {
     padding: 10px;
     display: flex;
-    align-items: center;
+    align-items: center;    
   }
-  .nav_underline {
-    width: 10%;
-    margin-top: -30px;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-  }
+
+
   header {
     position: relative;
   }
-  ul {
-    display: flex;
-    gap: 80px;
-    justify-content: end;
-  }
+
   li {
     list-style: none;
   }
+
   #logo,
   nav {
     flex: 1;
@@ -56,70 +58,177 @@ import "../css/generel.css";
     width: 50%;
     height: 50%;
   }
+
   a {
     text-decoration: none;
     color: var(--blue);
     font-size: 1.5rem;
   }
-  .a_underline:hover {
-    position: relative;
+  button#burger-menu {
+    margin-left: auto;
   }
-  .a_underline:hover:after {
-    content: url(/svg/navspirre.svg);
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 18px;
+
+
+  /*indsæt*/
+  @media (min-width: 900px) {
+    .nav_underline {
+      width: 10%;
+      margin-top: -30px;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+    }
+    ul {
+      display: flex;
+      gap: 80px;
+      justify-content: end;
+    }
+
+    .a_underline:hover {
+      position: relative;
+    }
+    .a_underline:hover:after {
+      content: url(/svg/navspirre.svg);
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 18px;
+    }
+    /*********** DROP DOWN ***********/
+    /* The container <div> - needed to position the dropdown content */
+    .dropcontainer {
+      position: relative;
+      display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropcontent {
+      display: none;
+      position: absolute;
+      background-color: var(--background_light);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 0 0 25px 25px;
+      margin-top: 12px;
+      text-align: center;
+    }
+    /* Links inside the dropdown */
+    .dropcontent a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    /* Change color of dropcontainer links on hover */
+    .dropcontent a:hover {
+      text-decoration: underline;
+    }
+
+    /* Show the dropcontainer menu on hover */
+    .dropcontainer:hover .dropcontent {
+      display: block;
+    }
   }
-  /*********** DROP DOWN ***********/
-  /* The container <div> - needed to position the dropdown content */
-  .dropcontainer {
-    position: relative;
-    display: inline-block;
-  }
-  /* Dropdown Content (Hidden by Default) */
-  .dropcontent {
+  /************* Burger menu ***********/
+
+  #burger-menu {
+    text-indent: -9999px;
     display: none;
-    position: absolute;
-    background-color: var(--background_light);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 0 0 25px 25px;
-    margin-top: 12px;
-    text-align: center;
-  }
-  /* Links inside the dropdown */
-  .dropcontent a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  /* Change color of dropcontainer links on hover */
-  .dropcontent a:hover {
-    text-decoration: underline;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
   }
 
-  /* Show the dropcontainer menu on hover */
-  .dropcontainer:hover .dropcontent {
+  #burger-menu {
     display: block;
+    margin: 0;
   }
-
-  /*********** MEDIA QUERY ***********/
-  @media (max-width: 1100px) {
-    .dropcontent {
-      right: 0%;
+  @media (max-width: 900px) {
+    #burger-menu span,
+    #burger-menu span:before,
+    #burger-menu span:after {
+      background: var(--blue);
+      display: block;
+      height: 3px;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+      content: "";
     }
-  }
-  @media (min-width: 1100px) {
-    .dropcontent {
-      margin-left: -45px;
+    #burger-menu span:before {
+      left: 0px;
+      top: -10px;
+      width: 27px;
     }
-    #header_indhold {
-      padding: 10px 50px 10px 10px;
+    #burger-menu span {
+      right: 0px;
+      top: 13px;
+      width: 27px;
     }
+    #burger-menu span:after {
+      left: 0px;
+      top: 10px;
+      width: 27px;
+    }
+    #burger-menu.close span:before {
+      top: 0px;
+      transform: rotate(90deg);
+      width: 27px;
+      background: var(--background_light);
+    }
+    #burger-menu.close span {
+      transform: rotate(-45deg);
+      top: 13px;
+      width: 27px;
+      background: var(--background_light);
+    }
+    #burger-menu.close span:after {
+      top: 0px;
+      left: 0;
+      transform: rotate(90deg);
+      opacity: 0;
+      width: 0;
+      background: var(--background_light);
+    }
+    #menu {
+      z-index: 1;
+      min-width: 100%;
+      min-height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+    #menu.overlay {
+      visibility: visible;
+      opacity: 1;
+      padding-top: 100px;
+      background: var(--blue);
+    }
+    #menu ul {
+      padding: 0;
+    }
+    #menu li {
+      list-style: none;
+      display: initial;
+    }
+    #menu a {
+      color: var(--background_light);
+      display: block;
+      font-size: 20px;
+      margin-bottom: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    #menu a#under {
+      display: none;
+    }
+    .a_underline.dropbtn {
+    display: none;
   }
 </style>
-
-<!-- BURGER MENU -->
-<script src="../js/menu.js"></script>
