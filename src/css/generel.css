@@ -13,9 +13,9 @@ img {
 
 /*********** FONT ***********/
 .fonts {
-  font-family: "Allerta", sans-serif;
   font-family: "brandon-grotesque", sans-serif;
   font-family: "Montserrat", sans-serif;
+  font-family: "Concert One", cursive;
 }
 
 /*********** STYLE ***********/
@@ -28,7 +28,7 @@ main {
 body {
   background-color: var(--background_light);
   color: var(--blue);
-  font-family: "Allerta", sans-serif, "Gill Sans";
+  font-family: var(--overskrift);
 }
 
 /*********** COLORS ***********/
@@ -36,6 +36,7 @@ body {
   --background_light: #f4f3ef;
   --background_dark: #e8e6df;
   --blue: #13429a;
+  --overskrift: "Concert One", sans-serif, "Gill Sans";
   /*--orange: #E76345;*/
 }
 
@@ -46,7 +47,7 @@ p {
   line-height: 180%;
 }
 h2 {
-  font-family: "Allerta", sans-serif, "Gill Sans";
+  font-family: var(--overskrift);
   font-weight: 500;
   font-size: 1.7rem;
 }
